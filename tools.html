@@ -10,32 +10,36 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/tools.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <title>Title</title>
 </head>
 <body>
 
 <nav>
     <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <!--<ul class="right hide-on-med-and-down">-->
-            <!--<li><a href="sass.html">Sass</a></li>-->
-            <!--<li><a href="badges.html">Components</a></li>-->
-            <!--<li><a href="collapsible.html">Javascript</a></li>-->
-            <!--<li><a href="mobile.html">Mobile</a></li>-->
-        <!--</ul>-->
+        <a href="#" class="brand-logo">Logo</a>
+        <a href="#" data-target="mobile-side-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down"></ul>
     </div>
 </nav>
 
-<ul class="sidenav" id="mobile-demo">
-    <li><a href="code-difference.html">Sass</a></li>
-    <!--<li><a href="badges.html">Components</a></li>-->
-    <!--<li><a href="collapsible.html">Javascript</a></li>-->
-    <!--<li><a href="mobile.html">Mobile</a></li>-->
+<ul class="sidenav sidenav-fixed" id="mobile-side-nav">
+    <li class="bold active"><a href="#code-difference" data-target="mobile-side-nav" class="nav-link sidenav-close">Code difference</a></li>
+    <li><a href="#minify-css" data-target="mobile-side-nav" class="nav-link sidenav-close">Minify CSS</a></li>
 </ul>
+
+<main>
+    <div id="code-difference" class="row section">
+        Code Diff
+    </div>
+    <div id="minify-css" class="row section" hidden>
+        Minify CSS
+    </div>
+</main>
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="js/tools.min.js"></script>
 </body>
 </html>
