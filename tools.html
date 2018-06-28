@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/tools.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/diffview.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <title>Title</title>
 </head>
 <body>
@@ -31,7 +32,20 @@
 <main>
     <div id="code-difference" class="row section">
         <div class="row" align="right">
-            <a class="waves-effect waves-light btn">Compare</a>
+            <div class="col s8"></div>
+            <div class="col s3">
+                <label class="col s6">
+                    <input class="with-gap" name="group3" type="radio" onclick="diffUsingJS(0);" checked/>
+                    <span>Side by Side Difference</span>
+                </label>
+                <label class="col s6">
+                    <input class="with-gap" name="group3" type="radio" onclick="diffUsingJS(1);" checked/>
+                    <span>Inline Difference</span>
+                </label>
+            </div>
+            <div class="col s1">
+                <a id="compare-button" class="waves-effect waves-light btn">Compare</a>
+            </div>
         </div>
         <div class="row">
             <form class="col s6">
@@ -63,6 +77,8 @@
 <!-- Compiled and minified JavaScript -->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="js/diffview.js"></script>
+<script src="js/difflib.js"></script>
 <script src="js/tools.min.js"></script>
 </body>
 </html>
