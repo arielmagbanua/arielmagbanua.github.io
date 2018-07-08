@@ -1,0 +1,18 @@
+{
+  "name": "arielmagbanua.github.io",
+  "homepage": "https://arielmagbanua.com/",
+  "description": "my personal web page",
+  "main": "",
+  "authors": [
+    "ariel magbanua"
+  ],
+  "license": "GNP",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
