@@ -1,0 +1,25 @@
+{
+  "name": "arielmagbanua.github.io",
+  "description": "My Page",
+  "main": "index.js",
+  "authors": [
+    "ariel magbanua"
+  ],
+  "license": "GPL-3.0",
+  "keywords": [
+    "page"
+  ],
+  "homepage": "https://github.com/arielmagbanua/arielmagbanua.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.100.2",
+    "jquery": "^3.3.1"
+  }
+}

@@ -1,2 +1,2 @@
 # arielmagbanua.github.io
-My Personal Github Page
+https://github.com/arielmagbanua/arielmagbanua.github.io.git
