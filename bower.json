@@ -1,12 +1,15 @@
 {
   "name": "arielmagbanua.github.io",
   "homepage": "https://arielmagbanua.com/",
-  "description": "my personal web page",
-  "main": "",
+  "description": "My Page",
+  "main": "gulpfile.js",
   "authors": [
     "ariel magbanua"
   ],
-  "license": "GNP",
+  "license": "GPL-3.0",
+  "keywords": [
+    "page"
+  ],
   "private": true,
   "ignore": [
     "**/.*",
@@ -14,5 +17,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "materialize": "^0.100.2",
+    "jquery": "^3.3.1"
+  }
 }
