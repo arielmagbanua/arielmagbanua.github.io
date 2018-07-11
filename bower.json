@@ -1,7 +1,8 @@
 {
   "name": "arielmagbanua.github.io",
+  "homepage": "https://arielmagbanua.com/",
   "description": "My Page",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "authors": [
     "ariel magbanua"
   ],
@@ -9,7 +10,6 @@
   "keywords": [
     "page"
   ],
-  "homepage": "https://github.com/arielmagbanua/arielmagbanua.github.io",
   "private": true,
   "ignore": [
     "**/.*",
