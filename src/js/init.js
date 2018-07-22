@@ -1,8 +1,11 @@
-(function($){
-  $(function(){
+(() => {
+    'use strict';
 
-    $('.sidenav').sidenav();
-    $('.parallax').parallax();
+    M.AutoInit();
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+    // if ('serviceWorker' in navigator) {
+    //     navigator.serviceWorker.register('/service-worker.js').then(() => {
+    //         console.log('Service Worker Registered!');
+    //     });
+    // }
+})();

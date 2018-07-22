@@ -1,0 +1,22 @@
+{
+  "name": "arielmagbanua.github.io",
+  "version": "1.0.0",
+  "description": "Ariel's Web Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arielmagbanua/arielmagbanua.github.io.git"
+  },
+  "keywords": [
+    "page"
+  ],
+  "author": "Ariel Magbanua",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arielmagbanua/arielmagbanua.github.io/issues"
+  },
+  "homepage": "https://github.com/arielmagbanua/arielmagbanua.github.io#readme"
+}
