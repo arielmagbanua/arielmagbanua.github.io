@@ -65,5 +65,3 @@ typings/
 # IDE directories
 .idea/
 .idea/*
-.idea
-/.idea
