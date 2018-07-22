@@ -1,7 +1,7 @@
 {
   "name": "arielmagbanua.github.io",
   "version": "1.0.0",
-  "description": "Ariel's Web Page",
+  "description": "My Page",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,10 +13,16 @@
   "keywords": [
     "page"
   ],
-  "author": "Ariel Magbanua",
-  "license": "MIT",
+  "author": "ariel magbanua",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/arielmagbanua/arielmagbanua.github.io/issues"
   },
-  "homepage": "https://github.com/arielmagbanua/arielmagbanua.github.io#readme"
+  "homepage": "https://github.com/arielmagbanua/arielmagbanua.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.0.1"
+  }
 }
