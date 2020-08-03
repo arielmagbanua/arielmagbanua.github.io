@@ -1,44 +1,32 @@
 {
-  "name": "arielmagbanua.github.io",
-  "version": "1.0.0",
-  "description": "My Page",
-  "main": "index.js",
+  "name": "arielmagbanua",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arielmagbanua/arielmagbanua.github.io.git"
-  },
-  "keywords": [
-    "page"
-  ],
-  "author": "ariel magbanua",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/arielmagbanua/arielmagbanua.github.io/issues"
-  },
-  "homepage": "https://github.com/arielmagbanua/arielmagbanua.github.io#readme",
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015": "^6.24.1",
-    "eslint": "^5.1.0",
-    "eslint-config-google": "^0.9.1",
-    "eslint-plugin-html": "^4.0.5",
-    "eslint-plugin-promise": "^3.8.0",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^7.0.1",
-    "gulp-clean-css": "^3.9.4",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.0"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "gulp-babel-minify": "^0.4.3",
-    "gulp-htmlmin": "^4.0.0",
-    "gulp-inline-source": "^3.2.0",
-    "materialize-css": "^1.0.0-rc.2",
-    "run-sequence": "^2.2.1"
+    "core-js": "^3.6.5",
+    "register-service-worker": "^1.7.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.4.0",
+    "@vue/cli-plugin-eslint": "^4.4.0",
+    "@vue/cli-plugin-pwa": "^4.4.0",
+    "@vue/cli-service": "^4.4.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
   }
 }
