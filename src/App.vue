@@ -1,51 +1,83 @@
 <template>
-  <div id="app">
-    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-      <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <svg
-          class="fill-current h-8 w-8 mr-2"
-          width="54"
-          height="54"
-          viewBox="0 0 54 54"
-          xmlns="http://www.w3.org/2000/svg"
+   <div id="app">
+    <navbar-component></navbar-component>
+    <main class="profile-page">
+      <section class="relative block" style="height: 500px;">
+        <div
+          class="absolute top-0 w-full h-full bg-center bg-cover"
+          style='background-image: url("https://images.unsplash.com/photo-1507494924047-60b8ee826ca9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1932&q=80");'
         >
-          <path
-            d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
-          />
-        </svg>
-        <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
-      </div>
-      <div class="block lg:hidden">
-        <button
-          class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+        </div>
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style="height: 70px; transform: translateZ(0px);"
         >
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
           </svg>
-        </button>
-      </div>
-      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div class="text-sm lg:flex-grow">
-          <router-link to="/">Home</router-link>|
-          <router-link to="/about">About</router-link>
         </div>
-        <div>
-          <a
-            href="#"
-            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
-          >Download</a>
-        </div>
-      </div>
-    </nav>
+      </section>
+      <section class="relative py-16 bg-gray-300">
+        <div class="container mx-auto px-4">
+          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+            <div class="px-6">
+              <div class="flex flex-wrap justify-center">
+                <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                  <div class="relative">
+                    <img
+                      alt="..."
+                      src="./assets/img/pic.jpg"
+                      class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                      style="max-width: 150px;"
+                    />
+                  </div>
+                </div>
+                <div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center"></div>
+                <div class="w-full lg:w-4/12 px-4 lg:order-1"></div>
+              </div>
+              <div class="text-center mt-24">
+                <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                  Ariel Magbanua
+                </h3>
+                <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                  <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                  Davao City, Philippines
+                </div>
+                <div class="mb-2 text-gray-700 mt-10">
+                  <i class="fas fa-briefcase mr-2 text-lg text-gray-500"></i>
+                  Software Engineer - Research and Development - Zeald
+                </div>
+              </div>
+              <div class="mt-10 py-10 border-t border-gray-300 text-center">
+                <div class="flex flex-wrap justify-center">
+                  <div class="w-full lg:w-9/12 px-4">
+                    <p class="mb-4 text-lg leading-relaxed text-gray-800">
+                      I am currently serving as a senior-level software engineer in the Research and Development Department.
+                      Our department focuses on research and development of our current or upcoming systems, products, and tools.
 
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>-->
-    <br />
-    <br />
-    <router-view />
+                      I'm always enthusiastic to explore new programming languages, technologies, new ideas, and practices for mobile and web.
+                      I always look forward to building or engineering cool and useful applications for people to use.
+                    </p>
+                    <a href="#pablo" class="font-normal text-pink-500"
+                      >Show more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer-component></footer-component>
   </div>
 </template>
 
@@ -71,3 +103,15 @@
   color: #42b983;
 }
 </style>
+
+<script>
+import NavbarComponent from './components/Navbar.vue'
+import FooterComponent from './components/Footer.vue'
+
+export default {
+  components: {
+    NavbarComponent,
+    FooterComponent
+  }
+}
+</script>
