@@ -47,6 +47,7 @@
               from="January 2019"
               to="Present"
               imageUrl="/img/zeald_logo.png"
+              shadow="shadow-lg"
             />
             <work-card
               title="Software Engineer"
