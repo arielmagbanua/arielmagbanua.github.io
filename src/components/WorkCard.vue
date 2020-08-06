@@ -1,5 +1,5 @@
 <template>
-  <div class="border border-gray-400 lg:border lg:border-gray-400 max-w-sm w-full lg:max-w-full lg:flex mb-2 mt-2" :class="shadow">
+  <div class="max-w-sm w-full lg:max-w-full lg:flex mb-2 mt-2" :class="shadow">
     <div
       class="h-48 w-48 lg:h-48 lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
       :style="{backgroundImage: `url(${imageUrl})`}"
@@ -63,7 +63,7 @@ export default {
     },
     shadow: {
       type: String,
-      default: 'shadow-sm'
+      default: 'shadow-md'
     }
   }
 }
