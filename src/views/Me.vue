@@ -39,7 +39,7 @@
             </div>
           </div>
           <div class="flex flex-wrap justify-center px-40">
-            <work-card
+            <work-experience-card
               title="Software Engineer"
               employer="Zeald"
               employmentType="Full-time"
@@ -49,7 +49,7 @@
               imageUrl="/img/zeald_logo.png"
               shadow="shadow-lg"
             />
-            <work-card
+            <work-experience-card
               title="Software Engineer"
               employer="IdeaHub IT Solutions Provider, Inc."
               employmentType="Full-time"
@@ -58,7 +58,7 @@
               to="January 2019"
               imageUrl="/img/ideahub_logo.png"
             />
-            <work-card
+            <work-experience-card
               title="IT Instructor"
               employer="STI College of Davao"
               description="Teaching Mobile Applications Development (Android) and Data Structures and Algorithms."
@@ -66,7 +66,6 @@
               to="November 2018"
               imageUrl="/img/sti_logo.png"
             />
-
             <a href="https://www.linkedin.com/in/arielmagbanua/" class="mt-2 font-normal text-pink-500">Show more</a>
           </div>
         </div>
@@ -76,11 +75,11 @@
 </template>
 
 <script>
-import WorkCard from '../components/WorkCard.vue'
+import WorkExperienceCard from '../components/WorkExperienceCard'
 
 export default {
   components: {
-    WorkCard
+    WorkExperienceCard
   }
 }
 </script>
