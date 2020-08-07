@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-w-sm w-full flex flex-row lg:max-w-full mb-2 mt-2"
+    class="w-full lg:max-w-full flex flex-row mb-2 mt-2"
     @mouseover="hovered = true"
     @mouseleave="hovered = false"
     :class="{'shadow-lg': hovered, 'shadow-md': !hovered}"

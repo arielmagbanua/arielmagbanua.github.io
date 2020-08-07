@@ -38,7 +38,7 @@
               </p>
             </div>
           </div>
-          <div class="flex flex-wrap justify-center px-40">
+          <div class="flex flex-wrap flex-col justify-center xl:px-40 lg:px-40 px-2">
             <work-experience-card
               title="Software Engineer"
               employer="Zeald"

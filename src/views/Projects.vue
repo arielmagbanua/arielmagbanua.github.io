@@ -1,11 +1,11 @@
 <template>
-  <div class="container mx-auto px-4 profile">
+  <div class="container mx-auto profile">
     <div
       class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64"
     >
       <div class="px-6">
         <div class="mt-10 py-10 text-center">
-          <div class="flex flex-wrap flex-row justify-center">
+          <div class="flex flex-wrap xl:flex-row lg:flex-row sm:flex-col md:flex-col justify-center">
             <project-card v-for="project in projects" :key="project.title"
               :title="project.title"
               :description="project.description"
