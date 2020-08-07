@@ -1,9 +1,9 @@
 <template>
-  <div class="inline-block mx-2 h-auto flex-grow">
+  <div class="inline-block m-1 h-auto flex-grow">
     <i v-if="renderable" :class="techClass"></i>
     <span
       v-else
-      class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+      class="bg-gray-200 rounded-full px-3 py-1 m-1 text-sm font-semibold text-gray-700">
       {{ lang }}
     </span>
   </div>
