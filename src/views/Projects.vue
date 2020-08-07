@@ -12,7 +12,6 @@
               :cover="project.cover"
               :technologies="project.technologies"
               :url="project.url"
-              :otherTechnologies="project.otherTechnologies"
             />
           </div>
         </div>
@@ -34,10 +33,7 @@ export default {
           cover: 'https://images.unsplash.com/photo-1507494924047-60b8ee826ca9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1932&q=80',
           url: 'https://arielmagbanua.com/',
           technologies: [
-            'html5', 'css3', 'js', 'vuejs'
-          ],
-          otherTechnologies: [
-            'firestore', 'firebase functions'
+            'html5', 'css3', 'js', 'vuejs', 'firestore', 'firebase functions'
           ]
         },
         {
@@ -46,30 +42,21 @@ export default {
           cover: 'https://arielandphebe.com/img/hero/hero4.jpg',
           url: 'https://arielandphebe.com/',
           technologies: [
-            'html5', 'css3', 'js', 'vuejs', 'node-js'
-          ],
-          otherTechnologies: [
-            'firestore', 'firebase functions', 'twitter api', 'google cloud vision'
+            'html5', 'css3', 'js', 'vuejs', 'node-js', 'firestore', 'firebase functions', 'twitter api', 'google cloud vision'
           ]
         },
         {
           title: 'Para Po!',
           description: 'It allows the user to find jeepney that passes to his/her desired origin and destination locations. It does compute estimated fare for each possible jeepney for those who are not familiar with the usual fare of Davao City jeepneys.',
           technologies: [
-            'android', 'java', 'google-play'
-          ],
-          otherTechnologies: [
-            'fcm', 'google maps', 'places api'
+            'android', 'java', 'google-play', 'fcm', 'google maps', 'places api'
           ]
         },
         {
           title: 'Para Po! (Web)',
           description: 'The web app allows the user to search and view all available Jeepney routes in Davao City. The web application also serves as administrator and data source of the partner android application which is Para Po!',
           technologies: [
-            'laravel', 'php', 'html5', 'css3'
-          ],
-          otherTechnologies: [
-            'mysql', 'google maps'
+            'laravel', 'php', 'html5', 'css3', 'mysql', 'google maps'
           ]
         },
         {
@@ -77,10 +64,7 @@ export default {
           description: 'Web application for managing the Engage Logic IQ publishers, advertisers, survey campaigns, and collection of leads.',
           url: 'http://leadreactor.engageiq.com/',
           technologies: [
-            'laravel', 'php', 'html5', 'css3', 'js'
-          ],
-          otherTechnologies: [
-            'mysql'
+            'laravel', 'php', 'html5', 'css3', 'js', 'mysql'
           ]
         }
       ]
