@@ -17,7 +17,7 @@
         </button>
       </div>
       <div
-        class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none"
+        class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none shadow-lg rounded-md"
         v-bind:class="{'hidden': !showMenu, 'block': showMenu}"
       >
         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
