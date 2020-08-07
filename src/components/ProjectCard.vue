@@ -13,12 +13,6 @@
       <tech-label v-for="tech in technologies" :key="tech"
         :lang = tech
       />
-      <div v-for="tech in otherTechnologies" :key="tech" class="h-auto inline-block flex-grow m-2">
-        <span
-          class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
-          {{ tech }}
-        </span>
-      </div>
     </div>
   </div>
 </template>
@@ -48,12 +42,6 @@ export default {
       type: String
     },
     technologies: {
-      type: Array,
-      default () {
-        return []
-      }
-    },
-    otherTechnologies: {
       type: Array,
       default () {
         return []
