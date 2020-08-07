@@ -1,6 +1,15 @@
 <template>
-  <div class="flex items-end flex-col max-w-sm rounded overflow-hidden shadow-lg my-2 mx-2">
-    <img class="w-full" :src="cover" alt="Project" />
+  <div
+    @mouseover="hovered = true"
+    @mouseleave="hovered = false"
+    :class="{'shadow-lg': hovered}"
+    class="project-card flex items-end flex-col max-w-sm rounded shadow-md overflow-hidden my-2 mx-2"
+  >
+    <div
+      class="w-full flex-none bg-cover project-cover-image"
+      :style="coverImageStyle"
+    >
+    </div>
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2">
         <a :href="url">{{ title }}</a>
@@ -9,7 +18,7 @@
         <a :href="url">{{ description }}</a>
       </p>
     </div>
-    <div class="px-6 py-4 h-full w-full flex-wrap flex-row flex items-center">
+    <div class="px-6 py-4 h-auto w-full flex-wrap flex-row flex items-center">
       <tech-label v-for="tech in technologies" :key="tech"
         :lang = tech
       />
@@ -17,12 +26,23 @@
   </div>
 </template>
 
+<style scoped>
+  div.project-cover-image {
+    height: 200px;
+  }
+</style>
+
 <script>
 import TechLabel from './TechLabel'
 
 export default {
   components: {
     TechLabel
+  },
+  data () {
+    return {
+      hovered: false
+    }
   },
   props: {
     cover: {
@@ -45,6 +65,14 @@ export default {
       type: Array,
       default () {
         return []
+      }
+    }
+  },
+
+  computed: {
+    coverImageStyle () {
+      return {
+        backgroundImage: `url('${this.cover}')`
       }
     }
   }
