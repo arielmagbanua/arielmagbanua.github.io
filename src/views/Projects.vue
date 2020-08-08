@@ -33,7 +33,7 @@ export default {
           cover: 'https://images.unsplash.com/photo-1507494924047-60b8ee826ca9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1932&q=80',
           url: 'https://arielmagbanua.com/',
           technologies: [
-            'html5', 'css3', 'js', 'vuejs', 'firestore', 'firebase functions'
+            'html5', 'css3', 'js', 'vuejs', 'firebase hosting'
           ]
         },
         {
