@@ -1,9 +1,6 @@
 <template>
   <div
-    @mouseover="hovered = true"
-    @mouseleave="hovered = false"
-    :class="{'shadow-lg': hovered}"
-    class="w-full lg:max-w-sm project-card flex items-end flex-col rounded shadow-md overflow-hidden my-2 mx-2"
+    class="w-full lg:max-w-sm project-card flex items-end flex-col rounded shadow-md overflow-hidden my-2 mx-2 shadow-md hover:shadow-lg"
   >
     <div
       class="w-full flex-none bg-cover project-cover-image"
@@ -38,11 +35,6 @@ import TechLabel from './TechLabel'
 export default {
   components: {
     TechLabel
-  },
-  data () {
-    return {
-      hovered: false
-    }
   },
   props: {
     cover: {
