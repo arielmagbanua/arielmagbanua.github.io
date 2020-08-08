@@ -29,7 +29,7 @@ export default {
       projects: [
         {
           title: 'Personal Page',
-          description: 'My personal profile page which details my current work and experience as well as my projects',
+          description: 'My personal profile page which details my current work and experience as well as my projects.',
           cover: 'https://images.unsplash.com/photo-1507494924047-60b8ee826ca9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1932&q=80',
           url: 'https://arielmagbanua.com/',
           technologies: [
