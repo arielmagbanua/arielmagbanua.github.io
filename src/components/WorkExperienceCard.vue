@@ -1,9 +1,6 @@
 <template>
   <div
-    class="w-full lg:max-w-full flex flex-row mb-2 mt-2"
-    @mouseover="hovered = true"
-    @mouseleave="hovered = false"
-    :class="{'shadow-lg': hovered, 'shadow-md': !hovered}"
+    class="w-full lg:max-w-full flex flex-row mb-2 mt-2 shadow-md hover:shadow-lg"
   >
     <div class="h-auto flex flex-col w-auto">
       <div
@@ -36,11 +33,6 @@
 
 <script>
 export default {
-  data () {
-    return {
-      hovered: false
-    }
-  },
   props: {
     title: {
       type: String,
