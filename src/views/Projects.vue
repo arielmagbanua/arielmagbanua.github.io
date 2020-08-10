@@ -22,7 +22,7 @@
 
 <script>
 import ProjectCard from '../components/ProjectCard.vue'
-import { firestore } from '../libs/firestore'
+import firestore from '../libs/firestore'
 
 export default {
   data () {
