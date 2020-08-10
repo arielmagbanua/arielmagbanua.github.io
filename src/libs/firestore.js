@@ -1,6 +1,6 @@
-const firebase = require('firebase')
+import firebase from 'firebase/app'
 // Required for side-effects
-require('firebase/firestore')
+import 'firebase/firestore'
 
 // Initialize Cloud Firestore through Firebase
 firebase.initializeApp({
@@ -15,7 +15,6 @@ firebase.initializeApp({
 })
 
 const firestore = firebase.firestore()
-firebase.analytics()
 
 export {
   firestore
