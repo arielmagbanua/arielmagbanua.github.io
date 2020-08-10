@@ -35,7 +35,7 @@ export default {
   },
   mounted: async function () {
     const snapshot = await firestore.collection('projects')
-      // .where('show', '==', true) // TODO: Fix the where clause
+      .where('show', '==', true)
       .orderBy('importance', 'desc')
       .get()
 
