@@ -1,6 +1,6 @@
 let info = {
-  name: "Mahy Mohab",
-  logo_name: "Mahy",
+  name: "Ariel Magbanua",
+  logo_name: "Ariel",
   flat_picture: require("./src/assets/me.png"),
   config: {
     use_cookies: true,
@@ -8,13 +8,12 @@ let info = {
       blur: false
     }
   },
-  description:
-    "hey there, I'm Mahy Mohab about to graduate from the computer and information technology KSU, SE department. A UI/UX Designer with 2+ experience familiar with Figma, xd, photoshop, illustrator, also, a Frontend Engineer with 4+ experience, and 1+ experience with react, react native, vuejs.",
+  description: "I am a passionate software engineer who enjoys coding and building applications. I build applications for both web and mobile and currently exploring machine learning and AI.",
   links: {
-    linkedin: "https://www.linkedin.com/in/mahy-mohab-209/",
-    github: "https://github.com/mahy209",
-    behance: "https://www.behance.net/mahymohab",
-    resume: "https://drive.google.com/file/d/1W0pzOo1Gb-W70BYKehOfZ4qaJt7m1_7O/view?usp=sharing",
+    linkedin: "https://www.linkedin.com/in/arielmagbanua/",
+    github: "https://github.com/arielmagbanua",
+    resume: "https://drive.google.com/file/d/1WFAYEoHdbGYhRVytnDoH5plgO5Umyu94/view?usp=sharing",
+    twitter: "https://twitter.com/Ariel_Magbanua"
   },
   education: [
     {
