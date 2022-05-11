@@ -118,7 +118,7 @@ let info = {
       info: [
         "VueJs",
         "Angular",
-        "Bootstrap 3"
+        "Bootstrap 4"
       ],
       icon: "fa fa-cubes"
     },
@@ -193,78 +193,146 @@ let info = {
   portfolio_design: [],
   portfolio: [
     {
-      name: "Diary App",
+      name: "Personal Website / Portfolio",
       pictures: [
         {
-          img: require("./src/assets/portfolio/diary/1.png")
+          img: require("./src/assets/portfolio/personal/1.png")
         },
         {
-          img: require("./src/assets/portfolio/diary/2.png")
-        },
-        {
-          img: require("./src/assets/portfolio/diary/3.png")
-        },
-      ],
-      technologies: ["react", "scss", "local storage"],
-      category: "Web App",
-      date: "Aug, 2021 - 20 days",
-      github:
-        "https://github.com/mahy209/notes-react-app.git",
-      visit: "https://github.com/mahy209/notes-react-app.git",
-      description:
-        " Diary react app with some new features: Dark mode, upload images, tags, filter search with title/content/tag "
-    },
-    {
-      name: "Online Examination",
-      pictures: [
-        {
-          img: require("./src/assets/portfolio/online examination/exam (1).png")
-        },
-        {
-          img: require("./src/assets/portfolio/online examination/exam (2).png")
-        },
-        {
-          img: require("./src/assets/portfolio/online examination/exam (3).png")
-        },
-        {
-          img: require("./src/assets/portfolio/online examination/exam (4).png")
-        },
-        {
-          img: require("./src/assets/portfolio/online examination/exam (5).png")
+          img: require("./src/assets/portfolio/personal/2.png")
         }
       ],
-      technologies: ["HTML", "CSS","JavaSript","JQuery", "PHP", "MySQL"],
+      technologies: ["VueJs", "HTML5", "CSS", "Bootstrap4", "Firebase Hosting"],
       category: "Web App",
-      date: "Apr, 2021 - May, 2021",
-      github: "https://github.com/mahy209/online-examination.git",
-      visit: "https://github.com/mahy209/online-examination.git",
-      description:
-        "Online Examination System Today Online Examination System has become a fast growing examination method because of its speed and accuracy. It is also needed less manpower to execute the examination. Almost all organizations now-a-days, are conducting their objective exams by online examination system, it saves students time in examinations. Organizations can also easily check the performance of the student that they give in an examination. As a result of this, organizations are releasing results in less time. It also helps the environment by saving paper. According to today’s requirement, online examination project in php is very useful to learn it. What is an online examination system? In an online examination system examine get their user id and password with his/her admit card. This id is already saved in the examination server. When examine login to the server he/she get his/her profile already register. On the certain time examine gets the message to start the examination. All answers given by examine are saved into the server with his/her profile information. Online examination system also allows to correct the answer if the examine needed to change any answer in the examination time duration, however, after the time duration any change will not allow. This also makes c checking the answer easy and error proof as computers are more accurate than man and provide fast results too. Php is a web base language so we can create an online examination system in PHP. Administrator of Online Examination has multiple features such as Add, Delete, Update Topics and Question. To Login as Admin put inside your browser."
+      date: "January 2018 - Present",
+      github:"https://github.com/arielmagbanua/arielmagbanua.github.io",
+      visit: "https://arielmagbanua.com/",
+      description: "My personal website and portfolio page."
     },
     {
-      name: "MyFlix.com",
+      name: "Mesh",
       pictures: [
         {
-          img: require("./src/assets/portfolio/myflix.com/1.png")
+          img: require("./src/assets/portfolio/mesh/1.png")
         },
         {
-          img: require("./src/assets/portfolio/myflix.com/2.png")
+          img: require("./src/assets/portfolio/mesh/2.png")
         },
         {
-          img: require("./src/assets/portfolio/myflix.com/3.png")
+          img: require("./src/assets/portfolio/mesh/3.png")
         },
         {
-          img: require("./src/assets/portfolio/myflix.com/4.png")
+          img: require("./src/assets/portfolio/mesh/4.png")
+        },
+        {
+          img: require("./src/assets/portfolio/mesh/5.png")
         },
       ],
-      technologies: ["react", "css", "TMDB"],
+      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel", "VueJs"],
       category: "Web App",
-      date: "Aug, 2021 - 10 days",
-      github:
-        "https://github.com/mahy209/MyFlix-react-app.git",
-      visit: "https://github.com/mahy209/MyFlix-react-app.git",
-      description:
-        " flix.com is a netflix clone using React JS and TMDB with courusal and search engine. "
+      date: "March 2019 - Present",
+      visit: "https://meshautomate.io/",
+      description: "Software integration middleware and automation tool."
+    },
+    {
+      name: "GEM Academy",
+      pictures: [
+        {
+          img: require("./src/assets/portfolio/gema/1.png")
+        },
+        {
+          img: require("./src/assets/portfolio/gema/2.png")
+        },
+        {
+          img: require("./src/assets/portfolio/gema/3.png")
+        },
+        {
+          img: require("./src/assets/portfolio/gema/4.png")
+        }
+      ],
+      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel", "VueJs", "Facebook Sign-in API", "Google Sign-in API"],
+      category: "Web App",
+      date: "April 2020 - November 2020",
+      visit: "https://www.gemacademy.nz/",
+      description: "Self-Paced online digital internship with NZ's most experienced digital agency for SME's"
+    },
+    {
+      name: "Para Po!",
+      pictures: [
+        {
+          img: require("./src/assets/portfolio/parapo/1.png")
+        },
+        {
+          img: require("./src/assets/portfolio/parapo/2.jpg")
+        },
+        {
+          img: require("./src/assets/portfolio/parapo/3.png")
+        },
+        {
+          img: require("./src/assets/portfolio/parapo/4.png")
+        },
+        {
+          img: require("./src/assets/portfolio/parapo/5.png")
+        },
+      ],
+      technologies: ["Java", "Android", "SQLite", "Google Maps API", "Places API"],
+      category: "Mobile",
+      date: "May 2017 - March 2018",
+      description: "An Android application that allows the user to find jeepney that passes to user's desired origin and destination locations. It does compute estimated fare for each possible jeepney for those who are not familiar with the usual fare of Davao City jeepneys."
+    },
+    {
+      name: "ParaPo Web App",
+      pictures: [
+        {
+          img: require("./src/assets/portfolio/parapo/6.png")
+        },
+        {
+          img: require("./src/assets/portfolio/parapo/7.png")
+        },
+      ],
+      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel", "Google Maps API"],
+      category: "Web App",
+      date: "May 2017 - March 2018",
+      description: "The web app allows the user to search and view all available Jeepney routes in Davao City. The web application also serves as administrator and data source of the partner android application which is Para Po!"
+    },
+    {
+      name: "Leads Filter",
+      pictures: [
+        {
+          img: require("./src/assets/portfolio/eiqleadsfilter/1.png")
+        },
+      ],
+      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel"],
+      category: "Web App",
+      date: "July 2015 - April 2016",
+      visit: "http://leadfilter.engageiq.com/",
+      description: "Receives lead requests and will enable administrators to filter or curate those leads for quality control."
+    },
+    {
+      name: "Reports Generator",
+      pictures: [
+        {
+          img: require("./src/assets/portfolio/eiqreportsgen/1.png")
+        },
+      ],
+      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel"],
+      category: "Web App",
+      date: "May 2015 - December 2019",
+      visit: "http://reports.engageiq.com/",
+      description: "Web application for generating and downloading of advertising leads revenue reports sheet."
+    },
+    {
+      name: "Lead Reactor",
+      pictures: [
+        {
+          img: require("./src/assets/portfolio/eiqleadreactor/1.png")
+        },
+      ],
+      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel"],
+      category: "Web App",
+      date: "May 2015 - December 2019",
+      visit: "http://leadreactor.engageiq.com/",
+      description: "Web application for managing the Engage Logic IQ publishers, advertisers, survey campaigns, and collection of leads."
     },
   ],
 };
