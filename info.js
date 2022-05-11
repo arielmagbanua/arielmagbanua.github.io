@@ -17,269 +17,180 @@ let info = {
   },
   education: [
     {
-      name: "KFS University",
-      place: "Kafr Elsheikh",
-      date: "sep, 2018 - present",
-      degree: "bachelor in software engineering",
-      gpa: "3.1/4.0",
-      description:
-        "",
+      name: "Holy Cross of Davao College",
+      place: "Davao City, Philippines",
+      date: "2007 - 2012",
+      degree: "Bachelor of Science (BS), Computer Engineering",
+      description: "Studied electronics, computer networks, and software engineering. ",
       skills: [
         "Software Engineering",
-        "web programming",
-        "UI/UX design",
-        "Front-end developing",
+        "Web Development",
+        "PHP",
+        "Java",
+        "C++",
+        "VB .NET"
       ]
     },
   ],
   experience: [
     {
-      name: "ITI",
-      place: "Kafr elSheikh, Egypt",
-      date: "1,sep, 2021 - 28,sep, 2021",
-      position: "VueJS web developer",
-      description:
-        "",
-      skills: ["HTML5", "CSS3", "Bootstrap", "JQuery", "Json", "JavaSript", "TypeSript", "es6", "VueJS"]
+      name: "Zeald / Dash10 Managed Services",
+      place: "Davao City, Philippines",
+      date: "January 2019 - Present",
+      position: "Senior Software Engineer",
+      description: "Currently working as a senior level software engineer in the Research and Development Department. Our department focuses on the research and development of our current or upcoming systems, products, and tools.",
+      skills: [
+        "HTML5",
+        "CSS3",
+        "PHP",
+        "JSON",
+        "JavaSript",
+        "C#",
+        "MySQL",
+        "Perl",
+        "Laravel",
+        ".NET Core",
+        "NodeJS",
+        "VueJS",
+        "Bootstrap",
+        "JQuery",
+        "Selenium Web-Driver",
+        "REST"
+      ]
     },
     {
-      name: "Udacity",
-      place: "Egypt",
-      date: "Jun 2021 - Jan 2022",
-      position: "React Web Developer",
-      description:
-        "",
-      skills: ["Javascript", "Typescript", "ReactJS", "React-Redux", "webpack", "NLP"]
+      name: "IdeaHub IT Solutions Provider, Inc.",
+      place: "Davao City, Philippines",
+      date: "September 20212 - December 2019",
+      position: "Senior Software Developer",
+      description: "I worked as one of the Android developers in the company and was deployed in an android project for a US client for almost three years, and then I worked on various web development projects for different US clients. My experience mostly using native Android java for mobile, Laravel framework for web, and server maintenance to ensure that all the applications were running correctly.",
+      skills: [
+        "HTML5",
+        "CSS3",
+        "PHP",
+        "JSON",
+        "JavaSript",
+        "MySQL",
+        "SQLite",
+        "Java",
+        "Laravel",
+        "Android",
+        "Bootstrap",
+        "JQuery",
+        "NodeJS",
+        "REST"
+      ]
     },
     {
-      name: "Freelancer",
-      place: "Egypt",
-      date: "jun, 2021 - sep, 2021",
-      position: "Junior UI/UX Designer",
-      description: "creating apps and web UI, Creating Interactive prototypes, Low fidelity and UX researches",
-      skills: ["figma", "Adobe XD", "Photoshop", "Illustrator"]
-    },
-    {
-      name: "Technopolitan",
-      place: "Cairo, Egypt",
-      date: "Jan 2022 - Present",
-      position: "Mid-Level UI/UX Designer",
-      description: "part of team include project managers and developers to create technically feasible design, creating 95% of CRM of the company ,creating user experience and interface using adobe XD for best user solution ,finishing 80% of tasks before the target ",
-      skills: ["figma", "Adobe XD"]
-    },
+      name: "STI College Davao",
+      place: "Davao City, Philippines",
+      date: "June 2014 - June 2015 / June 2018 - November 2018",
+      position: "IT Instructor",
+      description: "Instructor for Mobile Applications Development (Android), Data Structures and Algorithms courses of STI College Davao IT Department.",
+      skills: ["Java", "Android", "SQLite"]
+    }
   ],
   skills: [
     {
-      title: "UX/UI Design",
-      info: ["Figma", "Illustrator", "XD", "Photoshop", "Gimp"],
-      icon: "fa fa-pencil-square-o"
-    },
-    {
-      title: "Language",
+      title: "Languages",
       info: [
-        "Python","Javascript","TypeScript","Java","C#"],
+        "PHP",
+        "Dart",
+        "Java",
+        "HTML5",
+        "CSS3",
+        "Sass",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Kotlin",
+        "C#",
+        "C/C++",
+        "MySQL",
+        "SQLite",
+        "XML",
+        "YAML"
+      ],
       icon: "fa fa-code"
     },
     {
-      title: "Front-end",
+      title: "Front-end Frameworks",
       info: [
-        "HTML5","CSS3","Bootstrap3","Es6"],
+        "VueJs",
+        "Angular",
+        "Bootstrap 3"
+      ],
       icon: "fa fa-cubes"
     },
     {
-      title: "web technologies",
-      info: ["Vue", "React", "Node"],
-      icon: "fas fa-laptop-code"
+      title: "Back-end Frameworks",
+      info: [
+        "Laravel",
+        "NodeJs / Express",
+        ".NET Core"
+      ],
+      icon: "fa fa-duotone fa-cubes-stacked"
+    },
+    {
+      title: "Mobile",
+      info: [
+        "Android",
+        "Flutter"
+      ],
+      icon: "fa fa-duotone fa-mobile"
+    },
+    {
+      title: "Cloud Services",
+      info: [
+        "Firebase",
+        "Google App Engine"
+      ],
+      icon: "fa fa-solid fa-cloud"
+    },
+    {
+      title: "Database",
+      info: [
+        "MySQL",
+        "SQLite",
+        "Cloud Firestore"
+      ],
+      icon: "fa fa-solid fa-database"
+    },
+    {
+      title: "SaaS",
+      info: [
+        "Xero",
+        "Infusion Business Software",
+        "Mesh"
+      ],
+      icon: "fa fa-solid fa-server"
+    },
+    {
+      title: "Tools",
+      info: [
+        "Docker",
+        "Npm",
+        "Composer",
+        "Webpack",
+        "Android Studio",
+        "PHPStorm",
+        "WebStorm",
+        "PyCharm",
+        "Visual Studio Code"
+      ],
+      icon: "fa fa-solid fa-screwdriver-wrench"
+    },
+    {
+      title: "AI / Machine Learning",
+      info: [
+        "TensorFlow",
+        "TensorFlowJs",
+        "Google Vision AI"
+      ],
+      icon: "fa fa-solid fa-brain"
     },
   ],
-  portfolio_design: [
-    {
-      name: "Keep it Green",
-      title: "UI/UX Design",
-      pictures: [
-        {
-          img: require("./src/assets/designs/Keep it green/cover.png"),
-          title: "MoodBoard"
-        },
-        {
-          img: require("./src/assets/designs/Keep it green/show.png"),
-          title: "show"
-        },
-      ],
-      technologies: ["Figma", "Photoshop"],
-      category: "Visual Design",
-      github: "",
-      date: "Jan, 2022",
-      visit: "",
-      description:
-        ""
-    },
-    {
-      name: "Digital agency website",
-      title: "UI/UX Design",
-      pictures: [
-        {
-          img: require("./src/assets/designs/digital agency/behance cover.png"),
-          title: "MoodBoard"
-        },
-        {
-          img: require("./src/assets/designs/digital agency/1. start.png"),
-          title: "App Elements"
-        },
-        {
-          img: require("./src/assets/designs/digital agency/2. about.png"),
-          title: "App Elements"
-        },
-        {
-          img: require("./src/assets/designs/digital agency/3. Our services.png"),
-          title: "App Elements"
-        },
-        {
-          img: require("./src/assets/designs/digital agency/4. latest project.png"),
-          title: "App Elements"
-        },
-        {
-          img: require("./src/assets/designs/digital agency/5. Contact us.png"),
-          title: "App Elements"
-        },
-      ],
-      technologies: ["Figma", "Illustrator"],
-      category: "Visual Design",
-      github: "",
-      date: "Dec, 2021",
-      visit: "",
-      description:
-        ""
-    },
-    {
-      name: "Credit card design",
-      title: "Illustration",
-      pictures: [
-        {
-          img: require("./src/assets/designs/credit/behance cover.png"),
-          title: "MoodBoard"
-        },
-        {
-          img: require("./src/assets/designs/credit/degisning.png"),
-          title: "Degisning"
-        },
-        {
-          img: require("./src/assets/designs/credit/Dual tune.png"),
-          title: "Dual tune"
-        },
-        {
-          img: require("./src/assets/designs/credit/Glassmorphism.png"),
-          title: "Glassmorphism"
-        },
-        {
-          img: require("./src/assets/designs/credit/Gradiant.png"),
-          title: "Gradiant"
-        },
-        {
-          img: require("./src/assets/designs/credit/Monochrome.png"),
-          title: "Monochrome"
-        },
-        {
-          img: require("./src/assets/designs/credit/Neumorphism.png"),
-          title: "Neumorphism"
-        },
-      ],
-      technologies: ["Figma", "Illustrator"],
-      category: "Visual Design",
-      github: "",
-      date: "Dec, 2021",
-      visit: "",
-      description:
-        ""
-    },
-    {
-      name: "BOOKSI",
-      title: "E-Book library - UI/UX Design",
-      pictures: [
-        {
-          img: require("./src/assets/designs/booksi/behance cover.png"),
-          title: "Cover"
-        },
-        {
-          img: require("./src/assets/designs/booksi/behance board.png"),
-          title: "MoodBoard"
-        },
-        {
-          img: require("./src/assets/designs/booksi/login.png"),
-          title: "login"
-        },
-        {
-          img: require("./src/assets/designs/booksi/register.png"),
-          title: "register"
-        },
-        {
-          img: require("./src/assets/designs/booksi/home page.png"),
-          title: "homepage"
-        },
-        {
-          img: require("./src/assets/designs/booksi/For you.png"),
-          title: "just for you"
-        }
-      ],
-      technologies: ["Figma", "Photoshop"],
-      category: "Visual Design",
-      github: "",
-      date: "Nov, 2021",
-      visit: "",
-      description:
-        " BOOKSI is Ebook android app for easy read books."
-    },
-    {
-      name: "Quiet Weather",
-      title: "UI/UX Design",
-      pictures: [
-        {
-          img: require("./src/assets/designs/weather/Wooden Hand iPhone 12 Pro.png"),
-          title: "MoodBoard"
-        },
-        {
-          img: require("./src/assets/designs/weather/artboard.png"),
-          title: "show"
-        },
-        {
-          img: require("./src/assets/designs/weather/weather app react native.png"),
-          title: "components"
-        },
-      ],
-      technologies: ["Figma", "Illustration"],
-      category: "Visual Design",
-      github: "",
-      date: "Nov, 2021",
-      visit: "",
-      description:
-        "Quiet Weather is a react native app by openweathermap api, i designed the ui/ux and coding it in react native, enjoy it!"
-    },
-    {
-      name: "Pill Reminder",
-      title: "Pill Reminder - Mockup Design",
-      pictures: [
-        {
-          img: require("./src/assets/designs/pill reminder/Web 1.png"),
-          title: "Moodboard"
-        },
-        {
-          img: require("./src/assets/designs/pill reminder/1.png"),
-          title: "Mockups 1"
-        },
-        {
-          img: require("./src/assets/designs/pill reminder/2.png"),
-          title: "Mockups 2"
-        }
-      ],
-      technologies: ["XD", "Illustrator"],
-      category: "Visual Design",
-      github: "",
-      date: "Apr, 2021",
-      visit: "",
-      description:
-        "pill reminder app for nessecary drugs for the day."
-    },
-  ],
+  portfolio_design: [],
   portfolio: [
     {
       name: "Diary App",
