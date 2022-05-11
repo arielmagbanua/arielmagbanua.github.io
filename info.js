@@ -1,7 +1,7 @@
 let info = {
   name: "Ariel Magbanua",
   logo_name: "Ariel",
-  flat_picture: require("./src/assets/me.png"),
+  flat_picture: require("./src/assets/id.jpg"),
   config: {
     use_cookies: true,
     navbar: {
