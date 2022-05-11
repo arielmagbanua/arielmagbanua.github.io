@@ -1,360 +1,338 @@
 let info = {
-  name: "Mahy Mohab",
-  logo_name: "Mahy",
-  flat_picture: require("./src/assets/me.png"),
+  name: "Ariel Magbanua",
+  logo_name: "Ariel",
+  flat_picture: require("./src/assets/id.jpg"),
   config: {
     use_cookies: true,
     navbar: {
       blur: false
     }
   },
-  description:
-    "hey there, I'm Mahy Mohab about to graduate from the computer and information technology KSU, SE department. A UI/UX Designer with 2+ experience familiar with Figma, xd, photoshop, illustrator, also, a Frontend Engineer with 4+ experience, and 1+ experience with react, react native, vuejs.",
+  description: "I am a passionate software engineer who enjoys coding and building applications. I build applications for both web and mobile and currently exploring machine learning and AI.",
   links: {
-    linkedin: "https://www.linkedin.com/in/mahy-mohab-209/",
-    github: "https://github.com/mahy209",
-    behance: "https://www.behance.net/mahymohab",
-    resume: "https://drive.google.com/file/d/1W0pzOo1Gb-W70BYKehOfZ4qaJt7m1_7O/view?usp=sharing",
+    linkedin: "https://www.linkedin.com/in/arielmagbanua/",
+    github: "https://github.com/arielmagbanua",
+    resume: "https://drive.google.com/file/d/1WFAYEoHdbGYhRVytnDoH5plgO5Umyu94/view?usp=sharing",
+    twitter: "https://twitter.com/Ariel_Magbanua"
   },
   education: [
     {
-      name: "KFS University",
-      place: "Kafr Elsheikh",
-      date: "sep, 2018 - present",
-      degree: "bachelor in software engineering",
-      gpa: "3.1/4.0",
-      description:
-        "",
+      name: "Holy Cross of Davao College",
+      place: "Davao City, Philippines",
+      date: "2007 - 2012",
+      degree: "Bachelor of Science (BS), Computer Engineering",
+      description: "Studied electronics, computer networks, and software engineering. ",
       skills: [
         "Software Engineering",
-        "web programming",
-        "UI/UX design",
-        "Front-end developing",
+        "Web Development",
+        "PHP",
+        "Java",
+        "C++",
+        "VB .NET"
       ]
     },
   ],
   experience: [
     {
-      name: "ITI",
-      place: "Kafr elSheikh, Egypt",
-      date: "1,sep, 2021 - 28,sep, 2021",
-      position: "VueJS web developer",
-      description:
-        "",
-      skills: ["HTML5", "CSS3", "Bootstrap", "JQuery", "Json", "JavaSript", "TypeSript", "es6", "VueJS"]
+      name: "Zeald / Dash10 Managed Services",
+      place: "Davao City, Philippines",
+      date: "January 2019 - Present",
+      position: "Senior Software Engineer",
+      description: "Currently working as a senior level software engineer in the Research and Development Department. Our department focuses on the research and development of our current or upcoming systems, products, and tools.",
+      skills: [
+        "HTML5",
+        "CSS3",
+        "PHP",
+        "JSON",
+        "JavaSript",
+        "C#",
+        "MySQL",
+        "Perl",
+        "Laravel",
+        ".NET Core",
+        "NodeJS",
+        "VueJS",
+        "Bootstrap",
+        "JQuery",
+        "Selenium Web-Driver",
+        "REST"
+      ]
     },
     {
-      name: "Udacity",
-      place: "Egypt",
-      date: "Jun 2021 - Jan 2022",
-      position: "React Web Developer",
-      description:
-        "",
-      skills: ["Javascript", "Typescript", "ReactJS", "React-Redux", "webpack", "NLP"]
+      name: "IdeaHub IT Solutions Provider, Inc.",
+      place: "Davao City, Philippines",
+      date: "September 20212 - December 2019",
+      position: "Senior Software Developer",
+      description: "I worked as one of the Android developers in the company and was deployed in an android project for a US client for almost three years, and then I worked on various web development projects for different US clients. My experience mostly using native Android java for mobile, Laravel framework for web, and server maintenance to ensure that all the applications were running correctly.",
+      skills: [
+        "HTML5",
+        "CSS3",
+        "PHP",
+        "JSON",
+        "JavaSript",
+        "MySQL",
+        "SQLite",
+        "Java",
+        "Laravel",
+        "Android",
+        "Bootstrap",
+        "JQuery",
+        "NodeJS",
+        "REST"
+      ]
     },
     {
-      name: "Freelancer",
-      place: "Egypt",
-      date: "jun, 2021 - sep, 2021",
-      position: "Junior UI/UX Designer",
-      description: "creating apps and web UI, Creating Interactive prototypes, Low fidelity and UX researches",
-      skills: ["figma", "Adobe XD", "Photoshop", "Illustrator"]
-    },
-    {
-      name: "Technopolitan",
-      place: "Cairo, Egypt",
-      date: "Jan 2022 - Present",
-      position: "Mid-Level UI/UX Designer",
-      description: "part of team include project managers and developers to create technically feasible design, creating 95% of CRM of the company ,creating user experience and interface using adobe XD for best user solution ,finishing 80% of tasks before the target ",
-      skills: ["figma", "Adobe XD"]
-    },
+      name: "STI College Davao",
+      place: "Davao City, Philippines",
+      date: "June 2014 - June 2015 / June 2018 - November 2018",
+      position: "IT Instructor",
+      description: "Instructor for Mobile Applications Development (Android), Data Structures and Algorithms courses of STI College Davao IT Department.",
+      skills: ["Java", "Android", "SQLite"]
+    }
   ],
   skills: [
     {
-      title: "UX/UI Design",
-      info: ["Figma", "Illustrator", "XD", "Photoshop", "Gimp"],
-      icon: "fa fa-pencil-square-o"
-    },
-    {
-      title: "Language",
+      title: "Languages",
       info: [
-        "Python","Javascript","TypeScript","Java","C#"],
+        "PHP",
+        "Dart",
+        "Java",
+        "HTML5",
+        "CSS3",
+        "Sass",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Kotlin",
+        "C#",
+        "C/C++",
+        "MySQL",
+        "SQLite",
+        "XML",
+        "YAML"
+      ],
       icon: "fa fa-code"
     },
     {
-      title: "Front-end",
+      title: "Front-end Frameworks",
       info: [
-        "HTML5","CSS3","Bootstrap3","Es6"],
+        "VueJs",
+        "Angular",
+        "Bootstrap 4"
+      ],
       icon: "fa fa-cubes"
     },
     {
-      title: "web technologies",
-      info: ["Vue", "React", "Node"],
-      icon: "fas fa-laptop-code"
+      title: "Back-end Frameworks",
+      info: [
+        "Laravel",
+        "NodeJs / Express",
+        ".NET Core"
+      ],
+      icon: "fa fa-duotone fa-cubes-stacked"
+    },
+    {
+      title: "Mobile",
+      info: [
+        "Android",
+        "Flutter"
+      ],
+      icon: "fa fa-duotone fa-mobile"
+    },
+    {
+      title: "Cloud Services",
+      info: [
+        "Firebase",
+        "Google App Engine"
+      ],
+      icon: "fa fa-solid fa-cloud"
+    },
+    {
+      title: "Database",
+      info: [
+        "MySQL",
+        "SQLite",
+        "Cloud Firestore"
+      ],
+      icon: "fa fa-solid fa-database"
+    },
+    {
+      title: "SaaS",
+      info: [
+        "Xero",
+        "Infusion Business Software",
+        "Mesh"
+      ],
+      icon: "fa fa-solid fa-server"
+    },
+    {
+      title: "Tools",
+      info: [
+        "Docker",
+        "Npm",
+        "Composer",
+        "Webpack",
+        "Android Studio",
+        "PHPStorm",
+        "WebStorm",
+        "PyCharm",
+        "Visual Studio Code"
+      ],
+      icon: "fa fa-solid fa-screwdriver-wrench"
+    },
+    {
+      title: "AI / Machine Learning",
+      info: [
+        "TensorFlow",
+        "TensorFlowJs",
+        "Google Vision AI"
+      ],
+      icon: "fa fa-solid fa-brain"
     },
   ],
-  portfolio_design: [
-    {
-      name: "Keep it Green",
-      title: "UI/UX Design",
-      pictures: [
-        {
-          img: require("./src/assets/designs/Keep it green/cover.png"),
-          title: "MoodBoard"
-        },
-        {
-          img: require("./src/assets/designs/Keep it green/show.png"),
-          title: "show"
-        },
-      ],
-      technologies: ["Figma", "Photoshop"],
-      category: "Visual Design",
-      github: "",
-      date: "Jan, 2022",
-      visit: "",
-      description:
-        ""
-    },
-    {
-      name: "Digital agency website",
-      title: "UI/UX Design",
-      pictures: [
-        {
-          img: require("./src/assets/designs/digital agency/behance cover.png"),
-          title: "MoodBoard"
-        },
-        {
-          img: require("./src/assets/designs/digital agency/1. start.png"),
-          title: "App Elements"
-        },
-        {
-          img: require("./src/assets/designs/digital agency/2. about.png"),
-          title: "App Elements"
-        },
-        {
-          img: require("./src/assets/designs/digital agency/3. Our services.png"),
-          title: "App Elements"
-        },
-        {
-          img: require("./src/assets/designs/digital agency/4. latest project.png"),
-          title: "App Elements"
-        },
-        {
-          img: require("./src/assets/designs/digital agency/5. Contact us.png"),
-          title: "App Elements"
-        },
-      ],
-      technologies: ["Figma", "Illustrator"],
-      category: "Visual Design",
-      github: "",
-      date: "Dec, 2021",
-      visit: "",
-      description:
-        ""
-    },
-    {
-      name: "Credit card design",
-      title: "Illustration",
-      pictures: [
-        {
-          img: require("./src/assets/designs/credit/behance cover.png"),
-          title: "MoodBoard"
-        },
-        {
-          img: require("./src/assets/designs/credit/degisning.png"),
-          title: "Degisning"
-        },
-        {
-          img: require("./src/assets/designs/credit/Dual tune.png"),
-          title: "Dual tune"
-        },
-        {
-          img: require("./src/assets/designs/credit/Glassmorphism.png"),
-          title: "Glassmorphism"
-        },
-        {
-          img: require("./src/assets/designs/credit/Gradiant.png"),
-          title: "Gradiant"
-        },
-        {
-          img: require("./src/assets/designs/credit/Monochrome.png"),
-          title: "Monochrome"
-        },
-        {
-          img: require("./src/assets/designs/credit/Neumorphism.png"),
-          title: "Neumorphism"
-        },
-      ],
-      technologies: ["Figma", "Illustrator"],
-      category: "Visual Design",
-      github: "",
-      date: "Dec, 2021",
-      visit: "",
-      description:
-        ""
-    },
-    {
-      name: "BOOKSI",
-      title: "E-Book library - UI/UX Design",
-      pictures: [
-        {
-          img: require("./src/assets/designs/booksi/behance cover.png"),
-          title: "Cover"
-        },
-        {
-          img: require("./src/assets/designs/booksi/behance board.png"),
-          title: "MoodBoard"
-        },
-        {
-          img: require("./src/assets/designs/booksi/login.png"),
-          title: "login"
-        },
-        {
-          img: require("./src/assets/designs/booksi/register.png"),
-          title: "register"
-        },
-        {
-          img: require("./src/assets/designs/booksi/home page.png"),
-          title: "homepage"
-        },
-        {
-          img: require("./src/assets/designs/booksi/For you.png"),
-          title: "just for you"
-        }
-      ],
-      technologies: ["Figma", "Photoshop"],
-      category: "Visual Design",
-      github: "",
-      date: "Nov, 2021",
-      visit: "",
-      description:
-        " BOOKSI is Ebook android app for easy read books."
-    },
-    {
-      name: "Quiet Weather",
-      title: "UI/UX Design",
-      pictures: [
-        {
-          img: require("./src/assets/designs/weather/Wooden Hand iPhone 12 Pro.png"),
-          title: "MoodBoard"
-        },
-        {
-          img: require("./src/assets/designs/weather/artboard.png"),
-          title: "show"
-        },
-        {
-          img: require("./src/assets/designs/weather/weather app react native.png"),
-          title: "components"
-        },
-      ],
-      technologies: ["Figma", "Illustration"],
-      category: "Visual Design",
-      github: "",
-      date: "Nov, 2021",
-      visit: "",
-      description:
-        "Quiet Weather is a react native app by openweathermap api, i designed the ui/ux and coding it in react native, enjoy it!"
-    },
-    {
-      name: "Pill Reminder",
-      title: "Pill Reminder - Mockup Design",
-      pictures: [
-        {
-          img: require("./src/assets/designs/pill reminder/Web 1.png"),
-          title: "Moodboard"
-        },
-        {
-          img: require("./src/assets/designs/pill reminder/1.png"),
-          title: "Mockups 1"
-        },
-        {
-          img: require("./src/assets/designs/pill reminder/2.png"),
-          title: "Mockups 2"
-        }
-      ],
-      technologies: ["XD", "Illustrator"],
-      category: "Visual Design",
-      github: "",
-      date: "Apr, 2021",
-      visit: "",
-      description:
-        "pill reminder app for nessecary drugs for the day."
-    },
-  ],
+  portfolio_design: [],
   portfolio: [
     {
-      name: "Diary App",
+      name: "Personal Website / Portfolio",
       pictures: [
         {
-          img: require("./src/assets/portfolio/diary/1.png")
+          img: require("./src/assets/portfolio/personal/1.png")
         },
         {
-          img: require("./src/assets/portfolio/diary/2.png")
-        },
-        {
-          img: require("./src/assets/portfolio/diary/3.png")
-        },
-      ],
-      technologies: ["react", "scss", "local storage"],
-      category: "Web App",
-      date: "Aug, 2021 - 20 days",
-      github:
-        "https://github.com/mahy209/notes-react-app.git",
-      visit: "https://github.com/mahy209/notes-react-app.git",
-      description:
-        " Diary react app with some new features: Dark mode, upload images, tags, filter search with title/content/tag "
-    },
-    {
-      name: "Online Examination",
-      pictures: [
-        {
-          img: require("./src/assets/portfolio/online examination/exam (1).png")
-        },
-        {
-          img: require("./src/assets/portfolio/online examination/exam (2).png")
-        },
-        {
-          img: require("./src/assets/portfolio/online examination/exam (3).png")
-        },
-        {
-          img: require("./src/assets/portfolio/online examination/exam (4).png")
-        },
-        {
-          img: require("./src/assets/portfolio/online examination/exam (5).png")
+          img: require("./src/assets/portfolio/personal/2.png")
         }
       ],
-      technologies: ["HTML", "CSS","JavaSript","JQuery", "PHP", "MySQL"],
+      technologies: ["VueJs", "HTML5", "CSS", "Bootstrap4", "Firebase Hosting"],
       category: "Web App",
-      date: "Apr, 2021 - May, 2021",
-      github: "https://github.com/mahy209/online-examination.git",
-      visit: "https://github.com/mahy209/online-examination.git",
-      description:
-        "Online Examination System Today Online Examination System has become a fast growing examination method because of its speed and accuracy. It is also needed less manpower to execute the examination. Almost all organizations now-a-days, are conducting their objective exams by online examination system, it saves students time in examinations. Organizations can also easily check the performance of the student that they give in an examination. As a result of this, organizations are releasing results in less time. It also helps the environment by saving paper. According to today’s requirement, online examination project in php is very useful to learn it. What is an online examination system? In an online examination system examine get their user id and password with his/her admit card. This id is already saved in the examination server. When examine login to the server he/she get his/her profile already register. On the certain time examine gets the message to start the examination. All answers given by examine are saved into the server with his/her profile information. Online examination system also allows to correct the answer if the examine needed to change any answer in the examination time duration, however, after the time duration any change will not allow. This also makes c checking the answer easy and error proof as computers are more accurate than man and provide fast results too. Php is a web base language so we can create an online examination system in PHP. Administrator of Online Examination has multiple features such as Add, Delete, Update Topics and Question. To Login as Admin put inside your browser."
+      date: "January 2018 - Present",
+      github:"https://github.com/arielmagbanua/arielmagbanua.github.io",
+      visit: "https://arielmagbanua.com/",
+      description: "My personal website and portfolio page."
     },
     {
-      name: "MyFlix.com",
+      name: "Mesh",
       pictures: [
         {
-          img: require("./src/assets/portfolio/myflix.com/1.png")
+          img: require("./src/assets/portfolio/mesh/1.png")
         },
         {
-          img: require("./src/assets/portfolio/myflix.com/2.png")
+          img: require("./src/assets/portfolio/mesh/2.png")
         },
         {
-          img: require("./src/assets/portfolio/myflix.com/3.png")
+          img: require("./src/assets/portfolio/mesh/3.png")
         },
         {
-          img: require("./src/assets/portfolio/myflix.com/4.png")
+          img: require("./src/assets/portfolio/mesh/4.png")
+        },
+        {
+          img: require("./src/assets/portfolio/mesh/5.png")
         },
       ],
-      technologies: ["react", "css", "TMDB"],
+      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel", "VueJs"],
       category: "Web App",
-      date: "Aug, 2021 - 10 days",
-      github:
-        "https://github.com/mahy209/MyFlix-react-app.git",
-      visit: "https://github.com/mahy209/MyFlix-react-app.git",
-      description:
-        " flix.com is a netflix clone using React JS and TMDB with courusal and search engine. "
+      date: "March 2019 - Present",
+      visit: "https://meshautomate.io/",
+      description: "Software integration middleware and automation tool."
+    },
+    {
+      name: "GEM Academy",
+      pictures: [
+        {
+          img: require("./src/assets/portfolio/gema/1.png")
+        },
+        {
+          img: require("./src/assets/portfolio/gema/2.png")
+        },
+        {
+          img: require("./src/assets/portfolio/gema/3.png")
+        },
+        {
+          img: require("./src/assets/portfolio/gema/4.png")
+        }
+      ],
+      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel", "VueJs", "Facebook Sign-in API", "Google Sign-in API"],
+      category: "Web App",
+      date: "April 2020 - November 2020",
+      visit: "https://www.gemacademy.nz/",
+      description: "Self-Paced online digital internship with NZ's most experienced digital agency for SME's"
+    },
+    {
+      name: "Para Po!",
+      pictures: [
+        {
+          img: require("./src/assets/portfolio/parapo/1.png")
+        },
+        {
+          img: require("./src/assets/portfolio/parapo/2.jpg")
+        },
+        {
+          img: require("./src/assets/portfolio/parapo/3.png")
+        },
+        {
+          img: require("./src/assets/portfolio/parapo/4.png")
+        },
+        {
+          img: require("./src/assets/portfolio/parapo/5.png")
+        },
+      ],
+      technologies: ["Java", "Android", "SQLite", "Google Maps API", "Places API"],
+      category: "Mobile",
+      date: "May 2017 - March 2018",
+      description: "An Android application that allows the user to find jeepney that passes to user's desired origin and destination locations. It does compute estimated fare for each possible jeepney for those who are not familiar with the usual fare of Davao City jeepneys."
+    },
+    {
+      name: "ParaPo Web App",
+      pictures: [
+        {
+          img: require("./src/assets/portfolio/parapo/6.png")
+        },
+        {
+          img: require("./src/assets/portfolio/parapo/7.png")
+        },
+      ],
+      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel", "Google Maps API"],
+      category: "Web App",
+      date: "May 2017 - March 2018",
+      description: "The web app allows the user to search and view all available Jeepney routes in Davao City. The web application also serves as administrator and data source of the partner android application which is Para Po!"
+    },
+    {
+      name: "Leads Filter",
+      pictures: [
+        {
+          img: require("./src/assets/portfolio/eiqleadsfilter/1.png")
+        },
+      ],
+      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel"],
+      category: "Web App",
+      date: "July 2015 - April 2016",
+      visit: "http://leadfilter.engageiq.com/",
+      description: "Receives lead requests and will enable administrators to filter or curate those leads for quality control."
+    },
+    {
+      name: "Reports Generator",
+      pictures: [
+        {
+          img: require("./src/assets/portfolio/eiqreportsgen/1.png")
+        },
+      ],
+      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel"],
+      category: "Web App",
+      date: "May 2015 - December 2019",
+      visit: "http://reports.engageiq.com/",
+      description: "Web application for generating and downloading of advertising leads revenue reports sheet."
+    },
+    {
+      name: "Lead Reactor",
+      pictures: [
+        {
+          img: require("./src/assets/portfolio/eiqleadreactor/1.png")
+        },
+      ],
+      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel"],
+      category: "Web App",
+      date: "May 2015 - December 2019",
+      visit: "http://leadreactor.engageiq.com/",
+      description: "Web application for managing the Engage Logic IQ publishers, advertisers, survey campaigns, and collection of leads."
     },
   ],
 };
