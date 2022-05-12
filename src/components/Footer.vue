@@ -1,173 +1,122 @@
 <template>
-  <footer class="relative bg-gray-300 pt-6 pb-6">
-    <div
-      class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-      style="height: 80px; transform: translateZ(0px);"
-    >
-      <svg
-        class="absolute bottom-0 overflow-hidden"
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="none"
-        version="1.1"
-        viewBox="0 0 2560 100"
-        x="0"
-        y="0"
-      >
-        <polygon
-          class="text-gray-300 fill-current"
-          points="2560 0 2560 100 0 100"
+  <div class="bg-secondary">
+    <div class="container py-3">
+      <div class="row pt-1 align-items-center">
+        <div
+          class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pbelow"
+          style="color: white;"
         >
-        </polygon>
-      </svg>
-    </div>
-    <div class="container mx-auto px-4">
-      <div class="flex flex-wrap">
-        <div class="w-full lg:w-6/12 p-4">
-          <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
-          <h5 class="text-lg mt-0 mb-2 text-gray-700">
-            Find me on any of these platforms.
-          </h5>
-          <div class="mt-6">
-            <a href="https://twitter.com/Ariel_Magbanua">
-              <button
-                class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i class="flex fab fa-twitter"></i>
-              </button>
-            </a>
-            <a href="https://www.facebook.com/ariel.magbanua">
-              <button
-                class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i class="flex fab fa-facebook-square"></i>
-              </button>
-            </a>
-            <a href="https://github.com/arielmagbanua">
-              <button
-                class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i class="flex fab fa-github"></i>
-              </button>
-            </a>
-            <a href="https://www.linkedin.com/in/arielmagbanua/">
-              <button
-                class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i class="flex fab fa-linkedin"></i>
-              </button>
-            </a>
-            <a href="http://www.youtube.com/c/ArielMagbanua">
-              <button
-                class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i class="flex fab fa-youtube"></i>
-              </button>
-            </a>
-          </div>
+          <span>© 2021 Copyright: Ariel Magbanua</span>
         </div>
-        <div class="w-full lg:w-6/12 p-4">
-          <div class="flex flex-wrap mb-6">
-            <div class="w-full px-4">
-              <span
-                class="block uppercase text-gray-600 text-sm font-semibold mb-2"
-              >
-                Useful Links
-              </span>
-              <ul class="list-unstyled">
-                <li>
-                  <a
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="/"
-                  >
-                    About Me
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="/projects"
-                  >
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://github.com/arielmagbanua"
-                  >
-                    Github
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!-- <div class="w-full lg:w-4/12 px-4">
-              <span
-                class="block uppercase text-gray-600 text-sm font-semibold mb-2"
-              >
-                Other Resources
-              </span>
-              <ul class="list-unstyled">
-                <li>
-                  <a
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
-                  >
-                    MIT License
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://creative-tim.com/terms"
-                  >
-                    Terms &amp; Conditions
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://creative-tim.com/privacy"
-                  >
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://creative-tim.com/contact-us"
-                  >
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <hr class="my-6 border-gray-400" />
-      <div
-        class="flex flex-wrap items-center md:justify-between justify-center"
-      >
-        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-          <div class="text-sm text-gray-600 font-semibold py-1">
-            Copyright © {{date}} | Ariel Magbanua
+
+        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
+          <div class="text-center">
+            <button
+              v-if="linkedin"
+              class="btn btn-outline-secondary mx-2 "
+              @click="open('linkedin')"
+            >
+              <i class="fab fa-linkedin"></i>
+            </button>
+            <button
+              v-if="github"
+              class="btn btn-outline-secondary mx-2"
+              @click="open('github')"
+            >
+              <i class="fab fa-github"></i>
+            </button>
+            <button
+              v-if="twitter"
+              class="btn btn-outline-secondary mx-2 "
+              @click="open('twitter')"
+            >
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button
+              v-if="behance"
+              class="btn btn-outline-secondary mx-2"
+              @click="open('behance')"
+            >
+              <i class="fab fa-behance"></i>
+            </button>
+            <button
+              v-if="resume"
+              class="btn btn-outline-secondary mx-2"
+              @click="open('resume')"
+            >
+              <i class="fa fa-file"></i>
+            </button>
           </div>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
 </template>
+
 <script>
+import info from "../../info";
+
 export default {
-  data () {
+  name: "Footer",
+  data() {
     return {
-      date: new Date().getFullYear()
-    }
+      linkedin: info.links.linkedin,
+      github: info.links.github,
+      behance: info.links.behance,
+      resume: info.links.resume,
+      twitter: info.links.twitter,
+    };
+  },
+  methods: {
+    open(link) {
+      switch (link) {
+        case "linkedin":
+          window.open(this.linkedin, "_blank");
+          break;
+        case "github":
+          window.open(this.github, "_blank");
+          break;
+        case "behance":
+          window.open(this.behance, "_blank");
+          break;
+        case "resume":
+          window.open(this.resume, "_blank");
+          break;
+        case "twitter":
+          window.open(this.twitter, "_blank");
+          break;
+      }
+    },
+  },
+};
+</script>
+
+<style scoped>
+span {
+  font-weight: 500;
+}
+
+.btn {
+  border-color: white;
+  color: white;
+}
+
+.btn:hover {
+  background-color: white;
+  border-color: white;
+  color: gray;
+}
+
+.btn:focus {
+  background-color: white;
+  border-color: white;
+  color: gray;
+}
+
+@media screen and (max-width: 580px) {
+  .pbelow {
+    padding-bottom: 20px;
+    text-align: center;
   }
 }
-</script>
+</style>
