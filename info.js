@@ -168,7 +168,7 @@ let info = {
     {
       title: "Tools",
       info: [
-        "Docker",
+        "Git",
         "Npm",
         "Composer",
         "Webpack",
@@ -190,151 +190,182 @@ let info = {
       icon: "fa fa-solid fa-brain"
     },
   ],
-  portfolio_design: [],
-  portfolio: [
-    {
-      name: "Personal Website / Portfolio",
-      pictures: [
-        {
-          img: require("./src/assets/portfolio/personal/1.png")
-        },
-        {
-          img: require("./src/assets/portfolio/personal/2.png")
-        }
-      ],
-      technologies: ["VueJs", "HTML5", "CSS", "Bootstrap4", "Firebase Hosting"],
-      category: "Web App",
-      date: "January 2018 - Present",
-      github:"https://github.com/arielmagbanua/arielmagbanua.github.io",
-      visit: "https://arielmagbanua.com/",
-      description: "My personal website and portfolio page."
-    },
-    {
-      name: "Mesh",
-      pictures: [
-        {
-          img: require("./src/assets/portfolio/mesh/1.png")
-        },
-        {
-          img: require("./src/assets/portfolio/mesh/2.png")
-        },
-        {
-          img: require("./src/assets/portfolio/mesh/3.png")
-        },
-        {
-          img: require("./src/assets/portfolio/mesh/4.png")
-        },
-        {
-          img: require("./src/assets/portfolio/mesh/5.png")
-        },
-      ],
-      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel", "VueJs"],
-      category: "Web App",
-      date: "March 2019 - Present",
-      visit: "https://meshautomate.io/",
-      description: "Software integration middleware and automation tool."
-    },
-    {
-      name: "GEM Academy",
-      pictures: [
-        {
-          img: require("./src/assets/portfolio/gema/1.png")
-        },
-        {
-          img: require("./src/assets/portfolio/gema/2.png")
-        },
-        {
-          img: require("./src/assets/portfolio/gema/3.png")
-        },
-        {
-          img: require("./src/assets/portfolio/gema/4.png")
-        }
-      ],
-      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel", "VueJs", "Facebook Sign-in API", "Google Sign-in API"],
-      category: "Web App",
-      date: "April 2020 - November 2020",
-      visit: "https://www.gemacademy.nz/",
-      description: "Self-Paced online digital internship with NZ's most experienced digital agency for SME's"
-    },
-    {
-      name: "Para Po!",
-      pictures: [
-        {
-          img: require("./src/assets/portfolio/parapo/1.png")
-        },
-        {
-          img: require("./src/assets/portfolio/parapo/2.jpg")
-        },
-        {
-          img: require("./src/assets/portfolio/parapo/3.png")
-        },
-        {
-          img: require("./src/assets/portfolio/parapo/4.png")
-        },
-        {
-          img: require("./src/assets/portfolio/parapo/5.png")
-        },
-      ],
-      technologies: ["Java", "Android", "SQLite", "Google Maps API", "Places API"],
-      category: "Mobile",
-      date: "May 2017 - March 2018",
-      description: "An Android application that allows the user to find jeepney that passes to user's desired origin and destination locations. It does compute estimated fare for each possible jeepney for those who are not familiar with the usual fare of Davao City jeepneys."
-    },
-    {
-      name: "ParaPo Web App",
-      pictures: [
-        {
-          img: require("./src/assets/portfolio/parapo/6.png")
-        },
-        {
-          img: require("./src/assets/portfolio/parapo/7.png")
-        },
-      ],
-      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel", "Google Maps API"],
-      category: "Web App",
-      date: "May 2017 - March 2018",
-      description: "The web app allows the user to search and view all available Jeepney routes in Davao City. The web application also serves as administrator and data source of the partner android application which is Para Po!"
-    },
-    {
-      name: "Leads Filter",
-      pictures: [
-        {
-          img: require("./src/assets/portfolio/eiqleadsfilter/1.png")
-        },
-      ],
-      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel"],
-      category: "Web App",
-      date: "July 2015 - April 2016",
-      visit: "http://leadfilter.engageiq.com/",
-      description: "Receives lead requests and will enable administrators to filter or curate those leads for quality control."
-    },
-    {
-      name: "Reports Generator",
-      pictures: [
-        {
-          img: require("./src/assets/portfolio/eiqreportsgen/1.png")
-        },
-      ],
-      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel"],
-      category: "Web App",
-      date: "May 2015 - December 2019",
-      visit: "http://reports.engageiq.com/",
-      description: "Web application for generating and downloading of advertising leads revenue reports sheet."
-    },
-    {
-      name: "Lead Reactor",
-      pictures: [
-        {
-          img: require("./src/assets/portfolio/eiqleadreactor/1.png")
-        },
-      ],
-      technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel"],
-      category: "Web App",
-      date: "May 2015 - December 2019",
-      visit: "http://leadreactor.engageiq.com/",
-      description: "Web application for managing the Engage Logic IQ publishers, advertisers, survey campaigns, and collection of leads."
-    },
-  ],
+  projects: {
+    open_source: [
+      {
+        name: "Google Photos API Library",
+        pictures: [
+          {
+            img: require("./src/assets/portfolio/photoslibrary/1.png")
+          }
+        ],
+        technologies: ["PHP"],
+        category: "Library",
+        date: "September 2021 - Present",
+        github:"https://github.com/google/php-photoslibrary",
+        visit: "https://github.com/google/php-photoslibrary",
+        description: "This repository contains the PHP client library for the Google Photos Library API."
+      },
+      {
+        name: "Botman",
+        pictures: [
+          {
+            img: require("./src/assets/portfolio/botman/1.png")
+          }
+        ],
+        technologies: ["PHP"],
+        category: "Library",
+        date: "July 2020 - May 2022",
+        github:"https://github.com/botman/botman",
+        visit: "https://github.com/botman/botman",
+        description: "BotMan is a framework agnostic PHP library that is designed to simplify the task of developing innovative bots for multiple messaging platforms, including Slack, Telegram, Microsoft Bot Framework, Nexmo, HipChat, Facebook Messenger and WeChat."
+      }
+    ],
+    work: [
+      {
+        name: "Personal Website / Portfolio",
+        pictures: [
+          {
+            img: require("./src/assets/portfolio/personal/1.png")
+          },
+          {
+            img: require("./src/assets/portfolio/personal/2.png")
+          }
+        ],
+        technologies: ["VueJs", "HTML5", "CSS", "Bootstrap4", "Firebase Hosting"],
+        category: "Web App",
+        date: "January 2018 - Present",
+        github:"https://github.com/arielmagbanua/arielmagbanua.github.io",
+        visit: "https://arielmagbanua.com/",
+        description: "My personal website and portfolio page."
+      },
+      {
+        name: "Mesh",
+        pictures: [
+          {
+            img: require("./src/assets/portfolio/mesh/1.png")
+          },
+          {
+            img: require("./src/assets/portfolio/mesh/2.png")
+          },
+          {
+            img: require("./src/assets/portfolio/mesh/3.png")
+          },
+          {
+            img: require("./src/assets/portfolio/mesh/4.png")
+          },
+          {
+            img: require("./src/assets/portfolio/mesh/5.png")
+          },
+        ],
+        technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel", "VueJs"],
+        category: "Web App",
+        date: "March 2019 - Present",
+        visit: "https://meshautomate.io/",
+        description: "Software integration middleware and automation tool."
+      },
+      {
+        name: "GEM Academy",
+        pictures: [
+          {
+            img: require("./src/assets/portfolio/gema/1.png")
+          },
+          {
+            img: require("./src/assets/portfolio/gema/2.png")
+          },
+          {
+            img: require("./src/assets/portfolio/gema/3.png")
+          },
+          {
+            img: require("./src/assets/portfolio/gema/4.png")
+          }
+        ],
+        technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel", "VueJs", "Facebook Sign-in API", "Google Sign-in API"],
+        category: "Web App",
+        date: "April 2020 - November 2020",
+        visit: "https://www.gemacademy.nz/",
+        description: "Self-Paced online digital internship with NZ's most experienced digital agency for SME's"
+      },
+      {
+        name: "Para Po!",
+        pictures: [
+          {
+            img: require("./src/assets/portfolio/parapo/1.png")
+          },
+          {
+            img: require("./src/assets/portfolio/parapo/2.jpg")
+          },
+          {
+            img: require("./src/assets/portfolio/parapo/3.png")
+          },
+          {
+            img: require("./src/assets/portfolio/parapo/4.png")
+          },
+          {
+            img: require("./src/assets/portfolio/parapo/5.png")
+          },
+        ],
+        technologies: ["Java", "Android", "SQLite", "Google Maps API", "Places API"],
+        category: "Mobile",
+        date: "May 2017 - March 2018",
+        description: "An Android application that allows the user to find jeepney that passes to user's desired origin and destination locations. It does compute estimated fare for each possible jeepney for those who are not familiar with the usual fare of Davao City jeepneys."
+      },
+      {
+        name: "ParaPo Web App",
+        pictures: [
+          {
+            img: require("./src/assets/portfolio/parapo/6.png")
+          },
+          {
+            img: require("./src/assets/portfolio/parapo/7.png")
+          },
+        ],
+        technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel", "Google Maps API"],
+        category: "Web App",
+        date: "May 2017 - March 2018",
+        description: "The web app allows the user to search and view all available Jeepney routes in Davao City. The web application also serves as administrator and data source of the partner android application which is Para Po!"
+      },
+      {
+        name: "Leads Filter",
+        pictures: [
+          {
+            img: require("./src/assets/portfolio/eiqleadsfilter/1.png")
+          },
+        ],
+        technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel"],
+        category: "Web App",
+        date: "July 2015 - April 2016",
+        visit: "http://leadfilter.engageiq.com/",
+        description: "Receives lead requests and will enable administrators to filter or curate those leads for quality control."
+      },
+      {
+        name: "Reports Generator",
+        pictures: [
+          {
+            img: require("./src/assets/portfolio/eiqreportsgen/1.png")
+          },
+        ],
+        technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel"],
+        category: "Web App",
+        date: "May 2015 - December 2019",
+        visit: "http://reports.engageiq.com/",
+        description: "Web application for generating and downloading of advertising leads revenue reports sheet."
+      },
+      {
+        name: "Lead Reactor",
+        pictures: [
+          {
+            img: require("./src/assets/portfolio/eiqleadreactor/1.png")
+          },
+        ],
+        technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel"],
+        category: "Web App",
+        date: "May 2015 - December 2019",
+        visit: "http://leadreactor.engageiq.com/",
+        description: "Web application for managing the Engage Logic IQ publishers, advertisers, survey campaigns, and collection of leads."
+      },
+    ]
+  }
 };
 
 export default info;
