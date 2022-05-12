@@ -12,24 +12,35 @@
         <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
           <div class="text-center">
             <button
+              v-if="linkedin"
               class="btn btn-outline-secondary mx-2 "
               @click="open('linkedin')"
             >
               <i class="fab fa-linkedin"></i>
             </button>
             <button
+              v-if="github"
               class="btn btn-outline-secondary mx-2"
               @click="open('github')"
             >
               <i class="fab fa-github"></i>
             </button>
             <button
+              v-if="twitter"
+              class="btn btn-outline-secondary mx-2 "
+              @click="open('twitter')"
+            >
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button
+              v-if="behance"
               class="btn btn-outline-secondary mx-2"
               @click="open('behance')"
             >
               <i class="fab fa-behance"></i>
             </button>
             <button
+              v-if="resume"
               class="btn btn-outline-secondary mx-2"
               @click="open('resume')"
             >
@@ -53,6 +64,7 @@ export default {
       github: info.links.github,
       behance: info.links.behance,
       resume: info.links.resume,
+      twitter: info.links.twitter,
     };
   },
   methods: {
@@ -69,6 +81,9 @@ export default {
           break;
         case "resume":
           window.open(this.resume, "_blank");
+          break;
+        case "twitter":
+          window.open(this.twitter, "_blank");
           break;
       }
     },
