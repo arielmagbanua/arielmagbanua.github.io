@@ -36,7 +36,7 @@ export default {
   },
   data() {
     return {
-      nightMode: true,
+      nightMode: false,
       config: info.config,
     };
   },
