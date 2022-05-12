@@ -1,105 +1,39 @@
 <template>
-  <div
-    class="py-4 p-st"
-    :class="{
-      'bg-light': !nightMode,
-      'bg-dark2': nightMode,
-      'text-light': nightMode,
-    }"
-  >
+  <div class="py-4 p-st" :class="{
+    'bg-light': !nightMode,
+    'bg-dark2': nightMode,
+    'text-light': nightMode,
+  }">
     <div class="container">
-      <div
-        class="text-center"
-        data-aos="fade"
-        data-aos-once="true"
-        data-aos-duration="1000"
-      >
-        <span
-          class="title text-center"
-          :class="{ pgray: !nightMode, 'text-light': nightMode }"
-          >Portfolio.</span
-        >
+      <div class="text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">
+        <span class="title text-center" :class="{ pgray: !nightMode, 'text-light': nightMode }">Portfolio.</span>
       </div>
-      <hr
-        width="50%"
-        :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
-      />
+      <hr width="50%" :class="{ pgray: !nightMode, 'bg-secondary': nightMode }" />
 
       <vue-tabs :activeTextColor="!nightMode ? '#535A5E' : '#dfdfdf'">
-      <v-tab title="design">
+        <v-tab title="Projects">
+          <br />
           <div class="row">
-            <div
-              v-for="(design, idx) in desgin_info"
-              :key="idx"
-              :class="{ 'mt-4': idx === 0 ? true : true }"
-              class="col-xl-6 col-bg-6 col-md-12 col-sm-12"
-              style="position: relative;"
-            >
-              <vueper-slides
-                :dragging-distance="50"
-                fixed-height="300px"
-                :bullets="false"
-                slide-content-outside="bottom"
-                style="position: aboslute"
-                  @click.prevent="showDesignModalFn(design)"
-
-              >
-                <vueper-slide
-                  v-for="(slide, i) in design.pictures"
-                  :key="i"
-                  :image="slide.img"
-                />
-              </vueper-slides>
-              <div
-                style="width: 100%; display: flex; justify-content: space-between"
-                class="mt-2"
-              >
-                <div>
-                  <div class="title2" style="font-weight: 500;">{{ design.title }}</div>
-                  <span
-                    class="badge mr-2 mb-2"
-                    v-for="tech in design.technologies"
-                    :key="tech"
-                    :class="{ 'bg-dark4': nightMode }"
-                    >{{ tech }}</span
-                  >
-                  •
-                  <span class="date ml-1">{{design.date}}</span>
-                </div>
-
-                <button
-                  style="height: 31px; margin-top: 5px;"
-                  class="btn-sm btn btn-outline-secondary no-outline"
-                  @click.prevent="showDesignModalFn(design)"
-                >
-                  read more
-                </button>
-              </div>
+            <div class="col-xl-4 col-bg-4 col-md-6 col-sm-12" v-for="(portfolio, idx) in projects_portfolio"
+              :key="portfolio.name">
+              <Card :style="{ 'transition-delay': (idx % 3) / 4.2 + 's' }" :portfolio="portfolio" @show="showModalFn"
+                data-aos="fade-up" :nightMode="nightMode" data-aos-offset="100" data-aos-delay="10"
+                data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true" />
             </div>
           </div>
-          <br />
+          <div class="text-center py-3" v-if="showBtn !== 'show less'">
+            <button class="btn" @click.prevent="showMore">{{ showBtn }}</button>
+          </div>
         </v-tab>
-        <v-tab title="development">
+
+        <v-tab title="Open Source">
           <br />
           <div class="row">
-            <div
-              class="col-xl-4 col-bg-4 col-md-6 col-sm-12"
-              v-for="(portfolio, idx) in portfolio_info"
-              :key="portfolio.name"
-            >
-              <Card
-                :style="{ 'transition-delay': (idx % 3) / 4.2 + 's' }"
-                :portfolio="portfolio"
-                @show="showModalFn"
-                data-aos="fade-up"
-                :nightMode="nightMode"
-                data-aos-offset="100"
-                data-aos-delay="10"
-                data-aos-duration="500"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="true"
-              />
+            <div class="col-xl-4 col-bg-4 col-md-6 col-sm-12" v-for="(portfolio, idx) in open_source_projects"
+              :key="portfolio.name">
+              <Card :style="{ 'transition-delay': (idx % 3) / 4.2 + 's' }" :portfolio="portfolio" @show="showModalFn"
+                data-aos="fade-up" :nightMode="nightMode" data-aos-offset="100" data-aos-delay="10"
+                data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true" />
             </div>
           </div>
           <div class="text-center py-3" v-if="showBtn !== 'show less'">
@@ -109,22 +43,12 @@
       </vue-tabs>
     </div>
     <transition name="modal">
-      <Modal
-        :showModal="showModal"
-        @close="closeModal"
-        v-if="showModal"
-        :portfolio="modal_info"
-        :nightMode="nightMode"
-      />
+      <Modal :showModal="showModal" @close="closeModal" v-if="showModal" :portfolio="modal_info"
+        :nightMode="nightMode" />
     </transition>
     <transition name="modal">
-      <DesignModal
-        :showModal="showDesignModal"
-        @close="closeModal"
-        v-if="showDesignModal"
-        :portfolio="design_modal_info"
-        :nightMode="nightMode"
-      />
+      <DesignModal :showModal="showDesignModal" @close="closeModal" v-if="showDesignModal"
+        :portfolio="design_modal_info" :nightMode="nightMode" />
     </transition>
   </div>
 </template>
@@ -160,9 +84,9 @@ export default {
   },
   data() {
     return {
-      all_info: info.portfolio,
-      desgin_info: info.portfolio_design,
-      portfolio_info: [],
+      all_items: info.projects.work,
+      open_source_projects: info.projects.open_source,
+      projects_portfolio: [],
       showModal: false,
       showDesignModal: false,
       modal_info: {},
@@ -179,14 +103,14 @@ export default {
   },
   created() {
     for (var i = 0; i < this.number; i++) {
-      this.portfolio_info.push(this.all_info[i]);
+      this.projects_portfolio.push(this.all_items[i]);
     }
   },
   watch: {
     number() {
-      this.portfolio_info = [];
+      this.projects_portfolio = [];
       for (var i = 0; i < this.number; i++) {
-        this.portfolio_info.push(this.all_info[i]);
+        this.projects_portfolio.push(this.all_items[i]);
       }
     },
   },
@@ -212,7 +136,7 @@ export default {
       this.showDesignModal = true;
     },
     showMore() {
-      if (this.number != this.all_info.length) {
+      if (this.number != this.all_items.length) {
         this.number += 3;
 
         window.scrollBy({
@@ -220,14 +144,14 @@ export default {
           behavior: "smooth",
         });
 
-        if (this.number > this.all_info.length)
-          this.number = this.all_info.length;
+        if (this.number > this.all_items.length)
+          this.number = this.all_items.length;
       }
 
-      if (this.number == this.all_info.length && this.shower == 0) {
+      if (this.number == this.all_items.length && this.shower == 0) {
         this.shower = 1;
         this.showBtn = "show less";
-      } else if (this.number == this.all_info.length && this.shower == 1) {
+      } else if (this.number == this.all_items.length && this.shower == 1) {
         var elementPosition = document.getElementById("portfolio").offsetTop;
         window.scrollTo({ top: elementPosition + 5, behavior: "smooth" });
         this.shower = 0;
@@ -244,6 +168,7 @@ export default {
   font-size: 30px;
   font-weight: 500;
 }
+
 .title1 {
   font-size: 24px;
   font-weight: 400;
@@ -303,7 +228,7 @@ export default {
   color: #a0a0a0;
 }
 
-/deep/ .vue-tabs .nav-tabs > li.active > a {
+/deep/ .vue-tabs .nav-tabs>li.active>a {
   background: transparent;
   border: none;
   transition: all 0.5s;
@@ -313,19 +238,19 @@ export default {
   margin-left: 15px;
 }
 
-/deep/ .vue-tabs .nav-tabs > li > a:hover {
+/deep/ .vue-tabs .nav-tabs>li>a:hover {
   background: transparent;
   color: #cbcbcb;
   transition: all 0.5s;
 }
 
-/deep/ .vue-tabs .nav-tabs > li > a {
+/deep/ .vue-tabs .nav-tabs>li>a {
   background: transparent;
   border: none;
   transition: all 0.5s;
 }
 
-/deep/ .vue-tabs .nav-tabs > li > a:after {
+/deep/ .vue-tabs .nav-tabs>li>a:after {
   content: "";
   width: 20%;
   position: absolute;
@@ -335,7 +260,7 @@ export default {
   transition: all 0.5s;
 }
 
-/deep/ .vue-tabs .nav-tabs > li.active > a:after {
+/deep/ .vue-tabs .nav-tabs>li.active>a:after {
   width: 100%;
   transition: all 0.5s;
 }
@@ -350,6 +275,7 @@ export default {
   position: relative;
   border-radius: 15px;
 }
+
 .middle {
   transition: all 0.5s;
   opacity: 0;
@@ -376,6 +302,7 @@ export default {
 /deep/.vueperslide {
   border-radius: 10px !important;
 }
+
 /deep/.vueperslides__parallax-wrapper {
   border-radius: 10px !important;
 }
@@ -396,6 +323,7 @@ export default {
   border-color: #759CC9;
   color: white;
 }
+
 /deep/ .vueperslides__arrow {
   outline: none !important;
   border: none;
