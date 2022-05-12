@@ -19,11 +19,13 @@
             :class="{ pgray: !nightMode, 'text-light': nightMode }"
             >Welcome to my portfolio!</span
           >
+          <br>
           <div>
             <p v-html="description"></p>
           </div>
           <div class="text-center pb-4">
             <button
+              v-if="linkedin"
               class="btn btn-outline-secondary mx-2 "
               @click="open('linkedin')"
               v-tooltip.bottom="'LinkedIn'"
@@ -31,6 +33,7 @@
               <i class="fab fa-linkedin"></i>
             </button>
             <button
+              v-if="github"
               class="btn btn-outline-secondary mx-2"
               @click="open('github')"
               v-tooltip.bottom="'GitHub'"
@@ -38,6 +41,14 @@
               <i class="fab fa-github"></i>
             </button>
             <button
+              v-if="twitter"
+              class="btn btn-outline-secondary mx-2 "
+              @click="open('twitter')"
+            >
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button
+              v-if="behance"
               class="btn btn-outline-secondary mx-2"
               @click="open('behance')"
               v-tooltip.bottom="'behance'"
@@ -45,6 +56,7 @@
               <i class="fab fa-behance"></i>
             </button>
             <button
+              v-if="resume"
               class="btn btn-outline-secondary mx-2"
               @click="open('resume')"
               v-tooltip.bottom="'Resume'"
@@ -81,7 +93,8 @@ export default {
       linkedin: info.links.linkedin,
       github: info.links.github,
       behance: info.links.behance,
-      resume: info.links.resume
+      resume: info.links.resume,
+      twitter: info.links.twitter,
     };
   },
   methods: {
