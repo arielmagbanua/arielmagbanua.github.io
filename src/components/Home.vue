@@ -14,11 +14,7 @@
           <img :src="picture" />
         </div>
         <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pt-5">
-          <span
-            class="home-title"
-            :class="{ pgray: !nightMode, 'text-light': nightMode }"
-            >Welcome to my portfolio!</span
-          >
+          <span class="home-title" :class="{ pgray: !nightMode, 'text-light': nightMode }">Hello!</span>
           <br>
           <div>
             <p v-html="description"></p>
