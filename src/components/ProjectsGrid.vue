@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="text-center py-3" v-if="showBtn !== 'show less'">
-      <button class="btn" @click.prevent="showMore">{{ showBtn }}</button>
+      <button v-if="projects.length > number" class="btn" @click.prevent="showMore">{{ showBtn }}</button>
     </div>
     <transition name="modal">
       <Modal :showModal="showModal" @close="closeModal" v-if="showModal" :portfolio="modal_info"
@@ -51,14 +51,18 @@ export default {
   },
   created() {
     for (var i = 0; i < this.number; i++) {
-      this.visible_projects.push(this.projects[i]);
+      if (this.projects[i]) {
+        this.visible_projects.push(this.projects[i]);
+      }
     }
   },
   watch: {
     number() {
       this.visible_projects = [];
       for (var i = 0; i < this.number; i++) {
-        this.visible_projects.push(this.projects[i]);
+        if (this.projects[i]) {
+          this.visible_projects.push(this.projects[i]);
+        }
       }
     },
   },

@@ -16,18 +16,7 @@
         </v-tab>
 
         <v-tab title="Open Source">
-          <br />
-          <div class="row">
-            <div class="col-xl-4 col-bg-4 col-md-6 col-sm-12" v-for="(portfolio, idx) in open_source_projects"
-              :key="portfolio.name">
-              <Card :style="{ 'transition-delay': (idx % 3) / 4.2 + 's' }" :portfolio="portfolio" @show="showModalFn"
-                data-aos="fade-up" :nightMode="nightMode" data-aos-offset="100" data-aos-delay="10"
-                data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true" />
-            </div>
-          </div>
-          <div class="text-center py-3" v-if="showBtn !== 'show less'">
-            <button class="btn" @click.prevent="showMore">{{ showBtn }}</button>
-          </div>
+          <ProjectsGrid :nightMode="nightMode" :projects="open_source_projects"/>
         </v-tab>
       </vue-tabs>
     </div>
