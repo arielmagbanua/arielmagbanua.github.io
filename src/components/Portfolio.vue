@@ -16,6 +16,11 @@
         </v-tab>
 
         <v-tab title="Open Source">
+          <ProjectsGrid :nightMode="nightMode" :projects="open_source_projects"/>
+        </v-tab>
+
+        <!--
+        <v-tab title="Open Source">
           <br />
           <div class="row">
             <div class="col-xl-4 col-bg-4 col-md-6 col-sm-12" v-for="(portfolio, idx) in open_source_projects"
@@ -29,6 +34,7 @@
             <button class="btn" @click.prevent="showMore">{{ showBtn }}</button>
           </div>
         </v-tab>
+        -->
       </vue-tabs>
     </div>
     <transition name="modal">
