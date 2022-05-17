@@ -1,6 +1,6 @@
 let info = {
   name: "Ariel Magbanua",
-  logo_name: "Ariel",
+  logo_name: "Ariel Magbanua",
   flat_picture: require("./src/assets/id.jpg"),
   config: {
     use_cookies: true,
