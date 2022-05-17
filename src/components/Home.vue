@@ -40,6 +40,7 @@
               v-if="twitter"
               class="btn btn-outline-secondary mx-2 "
               @click="open('twitter')"
+              v-tooltip.bottom="'Twitter'"
             >
               <i class="fab fa-twitter"></i>
             </button>
@@ -107,6 +108,9 @@ export default {
           break;
         case "resume":
           window.open(this.resume, "_blank");
+          break;
+        case "twitter":
+          window.open(this.twitter, "_blank");
           break;
       }
     },
