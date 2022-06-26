@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy-firebase": "vue-cli-service lint && vue-cli-service build && firebase deploy --only hosting"
   },
   "dependencies": {
     "@chenfengyuan/vue-carousel": "^1.0.5",

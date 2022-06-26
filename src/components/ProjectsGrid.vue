@@ -20,14 +20,12 @@
 
 <script>
 import Card from "./helpers/Card";
-import { VTab } from "vue-nav-tabs";
 import Modal from "./helpers/Modal";
 
 export default {
   name: "ProjectsGrid",
   components: {
     Card,
-    VTab,
     Modal,
   },
   props: {
