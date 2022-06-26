@@ -1,112 +1,48 @@
 <template>
-  <div
-    class="py-4 p-st"
-    :class="{
-      'bg-light': !nightMode,
-      'bg-dark2': nightMode,
-      'text-light': nightMode,
-    }"
-  >
+  <div class="py-4 p-st" :class="{
+    'bg-light': !nightMode,
+    'bg-dark2': nightMode,
+    'text-light': nightMode,
+  }">
     <div class="container">
-      <div
-        class="text-center"
-        data-aos="fade"
-        data-aos-once="true"
-        data-aos-duration="1000"
-      >
-        <span
-          class="title text-center"
-          :class="{ pgray: !nightMode, 'text-light': nightMode }"
-          >Contact.</span
-        >
+      <div class="text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">
+        <span class="title text-center" :class="{ pgray: !nightMode, 'text-light': nightMode }">Contact.</span>
       </div>
-      <hr
-        width="50%"
-        :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
-      />
+      <hr width="50%" :class="{ pgray: !nightMode, 'bg-secondary': nightMode }" />
       <br />
       <div class="text-center">
-        <div
-          class="mb-3"
-          data-aos="fade-up"
-          data-aos-once="true"
-          data-aos-duration="1000"
-        >
-          <input
-            type="text"
-            name="user_name"
-            v-model="name"
-            placeholder="name"
-            class="pinput"
-            :class="{
-              pgray: !nightMode,
-              'pgray-dark': nightMode,
-              'text-light': nightMode,
-            }"
-            style="transition-delay: 0.2s"
-          />
+        <div class="mb-3" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+          <input type="text" name="user_name" v-model="name" placeholder="name" class="pinput" :class="{
+            pgray: !nightMode,
+            'pgray-dark': nightMode,
+            'text-light': nightMode,
+          }" style="transition-delay: 0.2s" />
         </div>
 
-        <div
-          class="my-3"
-          data-aos="fade-up"
-          data-aos-once="true"
-          data-aos-duration="1000"
-        >
-          <input
-            type="email"
-            name="user_email"
-            v-model="email"
-            placeholder="email"
-            class="pinput"
-            :class="{
-              pgray: !nightMode,
-              'pgray-dark': nightMode,
-              'text-light': nightMode,
-            }"
-            style="transition-delay: 0.4s"
-          />
+        <div class="my-3" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+          <input type="email" name="user_email" v-model="email" placeholder="email" class="pinput" :class="{
+            pgray: !nightMode,
+            'pgray-dark': nightMode,
+            'text-light': nightMode,
+          }" style="transition-delay: 0.4s" />
         </div>
 
-        <div
-          class="my-3"
-          data-aos="fade-up"
-          data-aos-once="true"
-          data-aos-duration="1000"
-        >
-          <textarea
-            name="message"
-            v-model="text"
-            placeholder="message"
-            class="pinput"
-            rows="4"
-            :class="{
-              pgray: !nightMode,
-              'pgray-dark': nightMode,
-              'text-light': nightMode,
-            }"
-            style="transition-delay: 0.6s"
-          ></textarea>
+        <div class="my-3" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+          <textarea name="message" v-model="text" placeholder="message" class="pinput" rows="4" :class="{
+            pgray: !nightMode,
+            'pgray-dark': nightMode,
+            'text-light': nightMode,
+          }" style="transition-delay: 0.6s"></textarea>
         </div>
 
-        <button
-          @click.prevent="sendEmail"
-          class="mt-1 btn mb-3"
-          data-aos="fade"
-          data-aos-once="true"
-          data-aos-duration="1000"
-          data-aos-offset="50"
-        >
+        <button @click.prevent="sendEmail" class="mt-1 btn mb-3" data-aos="fade" data-aos-once="true"
+          data-aos-duration="1000" data-aos-offset="50">
           Send
         </button>
       </div>
 
-      <Snackbar
-        :showSnackbar="showSnackbar"
-        @close="closeSnackbar"
-        :snackbarMessage="snackbarMessage"
-        :snackbarColor="snackbarColor"
-      />
+      <Snackbar :showSnackbar="showSnackbar" @close="closeSnackbar" :snackbarMessage="snackbarMessage"
+        :snackbarColor="snackbarColor" />
     </div>
   </div>
 </template>
@@ -166,7 +102,7 @@ export default {
             config.emailjs.userID
           )
           .then(
-            (result) => {
+            (_) => {
               this.showSnackbar = true;
               this.snackbarMessage = "Thanks! Message recieved.";
               this.snackbarColor = "#1aa260";
@@ -175,7 +111,7 @@ export default {
               this.text = "";
               this.name = "";
             },
-            (error) => {
+            (_) => {
               this.showSnackbar = true;
               this.snackbarMessage = "Oops! Something went wrong.";
               this.snackbarColor = "#64808E";
@@ -192,6 +128,7 @@ export default {
   font-size: 30px;
   font-weight: 500;
 }
+
 .title1 {
   font-size: 24px;
   font-weight: 400;
@@ -244,6 +181,7 @@ export default {
   .pinput {
     width: 90%;
   }
+
   .pinput {
     width: 90%;
   }
