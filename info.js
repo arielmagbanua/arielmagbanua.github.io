@@ -12,7 +12,7 @@ let info = {
   links: {
     linkedin: "https://www.linkedin.com/in/arielmagbanua/",
     github: "https://github.com/arielmagbanua",
-    resume: "https://drive.google.com/file/d/1WFAYEoHdbGYhRVytnDoH5plgO5Umyu94/view?usp=sharing",
+    resume: "https://docs.google.com/document/d/149plpJU-66WZATO3NisRpKrqEIRWYyzmN3jmkQRaEdw/edit#heading=h.jpv9v4b642w5",
     twitter: "https://twitter.com/Ariel_Magbanua"
   },
   education: [
@@ -99,17 +99,10 @@ let info = {
         "Java",
         "HTML5",
         "CSS3",
-        "Sass",
         "Python",
         "JavaScript",
         "TypeScript",
-        "Kotlin",
-        "C#",
-        "C/C++",
-        "MySQL",
-        "SQLite",
-        "XML",
-        "YAML"
+        "SQL"
       ],
       icon: "fa fa-code"
     },
@@ -148,11 +141,11 @@ let info = {
       icon: "fa fa-solid fa-cloud"
     },
     {
-      title: "Database",
+      title: "Databases",
       info: [
         "MySQL",
         "SQLite",
-        "Cloud Firestore"
+        "Firestore"
       ],
       icon: "fa fa-solid fa-database"
     },
@@ -169,9 +162,7 @@ let info = {
       title: "Tools",
       info: [
         "Git",
-        "Npm",
-        "Composer",
-        "Webpack",
+        "Sass",
         "Android Studio",
         "PHPStorm",
         "WebStorm",
@@ -193,18 +184,18 @@ let info = {
   projects: {
     open_source: [
       {
-        name: "Google Photos API Library",
+        name: "Dart Basics",
         pictures: [
           {
-            img: require("./src/assets/portfolio/photoslibrary/1.png")
+            img: require("./src/assets/portfolio/dart/dartbasics.png")
           }
         ],
         technologies: ["PHP"],
         category: "Library",
-        date: "September 2021 - Present",
-        github:"https://github.com/google/php-photoslibrary",
-        visit: "https://github.com/google/php-photoslibrary",
-        description: "This repository contains the PHP client library for the Google Photos Library API."
+        date: "July 2022 - Present",
+        github:"https://github.com/google/dart-basics",
+        visit: "https://github.com/google/dart-basics",
+        description: "Useful extension methods on the built-in objects in Dart, such as String, Iterable, and Object."
       },
       {
         name: "Botman",
@@ -219,7 +210,21 @@ let info = {
         github:"https://github.com/botman/botman",
         visit: "https://github.com/botman/botman",
         description: "BotMan is a framework agnostic PHP library that is designed to simplify the task of developing innovative bots for multiple messaging platforms, including Slack, Telegram, Microsoft Bot Framework, Nexmo, HipChat, Facebook Messenger and WeChat."
-      }
+      },
+      {
+        name: "Google Photos API Library",
+        pictures: [
+          {
+            img: require("./src/assets/portfolio/photoslibrary/1.png")
+          }
+        ],
+        technologies: ["PHP"],
+        category: "Library",
+        date: "September 2021 - Present",
+        github:"https://github.com/google/php-photoslibrary",
+        visit: "https://github.com/google/php-photoslibrary",
+        description: "This repository contains the PHP client library for the Google Photos Library API."
+      },
     ],
     work: [
       {
