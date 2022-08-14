@@ -198,6 +198,34 @@ let info = {
         description: "Useful extension methods on the built-in objects in Dart, such as String, Iterable, and Object."
       },
       {
+        name: "ESV Bible for Dart",
+        pictures: [
+          {
+            img: require("./src/assets/portfolio/esv_bible/pub_esv_bible.png")
+          }
+        ],
+        technologies: ["Dart"],
+        category: "Library",
+        date: "July 2022 - Present",
+        github:"https://github.com/arielmagbanua/esv_bible",
+        visit: "https://pub.dev/packages/esv_bible",
+        description: "A future based dart package for the ESV API from Crossway which can be used to fetch ESV bible passages."
+      },
+      {
+        name: "NLT Bible for Dart",
+        pictures: [
+          {
+            img: require("./src/assets/portfolio/nlt_bible/pub_nlt_bible.png")
+          }
+        ],
+        technologies: ["Dart"],
+        category: "Library",
+        date: "August 2022 - Present",
+        github:"https://github.com/arielmagbanua/nlt_bible",
+        visit: "https://pub.dev/packages/nlt_bible",
+        description: "A future based dart package for the NLT API from Tyndale which can be used to fetch NLT and KJV bible passages."
+      },
+      {
         name: "Google Photos API Library",
         pictures: [
           {
