@@ -198,20 +198,6 @@ let info = {
         description: "Useful extension methods on the built-in objects in Dart, such as String, Iterable, and Object."
       },
       {
-        name: "Botman",
-        pictures: [
-          {
-            img: require("./src/assets/portfolio/botman/1.png")
-          }
-        ],
-        technologies: ["PHP"],
-        category: "Library",
-        date: "July 2020 - May 2022",
-        github:"https://github.com/botman/botman",
-        visit: "https://github.com/botman/botman",
-        description: "BotMan is a framework agnostic PHP library that is designed to simplify the task of developing innovative bots for multiple messaging platforms, including Slack, Telegram, Microsoft Bot Framework, Nexmo, HipChat, Facebook Messenger and WeChat."
-      },
-      {
         name: "Google Photos API Library",
         pictures: [
           {
