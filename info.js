@@ -34,9 +34,27 @@ let info = {
   ],
   experience: [
     {
+      name: "Mapúa Malayan Colleges Mindanao",
+      place: "Davao City, Philippines",
+      date: "August 2023 - present",
+      position: "College Instructor",
+      description: "Teaching Object Oriented Programming and Mobile Application Development.",
+      skills: [
+        "Java",
+        "Kotlin",
+        "Git",
+        "Android",
+        "C#",
+        "Python",
+        "SQLite",
+        "SQL",
+        "Teaching"
+      ]
+    },
+    {
       name: "Zeald / Dash10 Managed Services",
       place: "Davao City, Philippines",
-      date: "January 2019 - Present",
+      date: "January 2019 - March 2024",
       position: "Senior Software Engineer",
       description: "Currently working as a senior level software engineer in the Research and Development Department. Our department focuses on the research and development of our current or upcoming systems, products, and tools.",
       skills: [
@@ -44,17 +62,14 @@ let info = {
         "CSS3",
         "PHP",
         "JSON",
-        "JavaSript",
+        "JavaScript",
         "C#",
         "MySQL",
-        "Perl",
         "Laravel",
         ".NET Core",
-        "NodeJS",
         "VueJS",
         "Bootstrap",
         "JQuery",
-        "Selenium Web-Driver",
         "REST"
       ]
     },
@@ -69,7 +84,7 @@ let info = {
         "CSS3",
         "PHP",
         "JSON",
-        "JavaSript",
+        "JavaScript",
         "MySQL",
         "SQLite",
         "Java",
@@ -77,7 +92,6 @@ let info = {
         "Android",
         "Bootstrap",
         "JQuery",
-        "NodeJS",
         "REST"
       ]
     },
@@ -97,6 +111,7 @@ let info = {
         "PHP",
         "Dart",
         "Java",
+        "Kotlin",
         "HTML5",
         "CSS3",
         "Python",
@@ -109,9 +124,10 @@ let info = {
     {
       title: "Front-end Frameworks",
       info: [
+        "Android Jetpack Compose",
         "VueJs",
-        "Angular",
-        "Bootstrap 4"
+        "React",
+        "Bootstrap 4",
       ],
       icon: "fa fa-cubes"
     },
@@ -119,7 +135,7 @@ let info = {
       title: "Back-end Frameworks",
       info: [
         "Laravel",
-        "NodeJs / Express",
+        "Firebase Functions",
         ".NET Core"
       ],
       icon: "fa fa-duotone fa-cubes-stacked"
@@ -153,8 +169,7 @@ let info = {
       title: "SaaS",
       info: [
         "Xero",
-        "Infusion Business Software",
-        "Mesh"
+        "Infusion Business Software"
       ],
       icon: "fa fa-solid fa-server"
     },
@@ -175,7 +190,6 @@ let info = {
       title: "AI / Machine Learning",
       info: [
         "TensorFlow",
-        "TensorFlowJs",
         "Google Vision AI"
       ],
       icon: "fa fa-solid fa-brain"
@@ -271,23 +285,6 @@ let info = {
         description: "The GrowPoint Foundation is a seven-lesson personal discipleship guide to help facilitate conversations to jump-start someone’s walk with God. It is a tool to engage people, communicate the gospel to them, and help them follow Jesus. The goal is not to finish the booklet——it’s to help them know and walk with God."
       },
       {
-        name: "Personal Website / Portfolio",
-        pictures: [
-          {
-            img: require("./src/assets/portfolio/personal/1.png")
-          },
-          {
-            img: require("./src/assets/portfolio/personal/2.png")
-          }
-        ],
-        technologies: ["VueJs", "HTML5", "CSS", "Bootstrap4", "Firebase Hosting"],
-        category: "Web App",
-        date: "January 2018 - Present",
-        github:"https://github.com/arielmagbanua/arielmagbanua.github.io",
-        visit: "https://arielmagbanua.com/",
-        description: "My personal website and portfolio page."
-      },
-      {
         name: "Mesh",
         pictures: [
           {
@@ -311,6 +308,23 @@ let info = {
         date: "March 2019 - Present",
         visit: "https://meshautomate.io/",
         description: "Software integration middleware and automation tool."
+      },
+      {
+        name: "Personal Website / Portfolio",
+        pictures: [
+          {
+            img: require("./src/assets/portfolio/personal/1.png")
+          },
+          {
+            img: require("./src/assets/portfolio/personal/2.png")
+          }
+        ],
+        technologies: ["VueJs", "HTML5", "CSS", "Bootstrap4", "Firebase Hosting"],
+        category: "Web App",
+        date: "January 2018 - Present",
+        github:"https://github.com/arielmagbanua/arielmagbanua.github.io",
+        visit: "https://arielmagbanua.com/",
+        description: "My personal website and portfolio page."
       },
       {
         name: "GEM Academy",
