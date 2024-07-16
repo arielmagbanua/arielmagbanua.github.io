@@ -1,7 +1,7 @@
 let info = {
   name: "Ariel Magbanua",
   logo_name: "Ariel Magbanua",
-  flat_picture: require("./src/assets/id.jpg"),
+  flat_picture: require("./src/assets/id_transparent.png"),
   config: {
     use_cookies: true,
     navbar: {
@@ -241,6 +241,35 @@ let info = {
       },
     ],
     work: [
+      {
+        name: "Foundation",
+        pictures: [
+          {
+            img: require("@/assets/portfolio/foundation/1.png")
+          },
+          {
+            img: require("@/assets/portfolio/foundation/2.png")
+          },
+          {
+            img: require("@/assets/portfolio/foundation/3.png")
+          },
+            {
+            img: require("@/assets/portfolio/foundation/4.png")
+          },
+            {
+            img: require("@/assets/portfolio/foundation/5.png")
+          },
+            {
+            img: require("@/assets/portfolio/foundation/6.png")
+          }
+        ],
+        technologies: ["Android", "Kotlin", "Jetpack Compose", "Firebase Authentication", "Firestore"],
+        category: "Mobile",
+        date: "January 2023 - Present",
+        github:"https://github.com/Growpoint-Davao/foundations",
+        visit: "https://github.com/Growpoint-Davao/foundations",
+        description: "The GrowPoint Foundation is a seven-lesson personal discipleship guide to help facilitate conversations to jump-start someone’s walk with God. It is a tool to engage people, communicate the gospel to them, and help them follow Jesus. The goal is not to finish the booklet——it’s to help them know and walk with God."
+      },
       {
         name: "Personal Website / Portfolio",
         pictures: [
