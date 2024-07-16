@@ -38,17 +38,24 @@ export default {
     };
   },
   created() {
-    if (this.config.use_cookies) {
-      this.nightMode = this.$cookie.get("nightMode") === "true" ? true : false;
+    if (this.config.use_cookies && this.$cookie.get("nightMode") !== null) {
+      this.nightMode = this.$cookie.get("nightMode") === "true";
+    } else {
+      this.nightMode = this.systemDarkMode;
     }
   },
   mounted() {
     ["about", "skills", "portfolio"].forEach((l) => {
       if (window.location.href.includes(l)) {
-        var elementPosition = document.getElementById(l).offsetTop;
+        const elementPosition = document.getElementById(l).offsetTop;
         window.scrollTo({ top: elementPosition - 35, behavior: "smooth" });
       }
     });
+  },
+  computed: {
+    systemDarkMode: function() {
+      return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    }
   },
   methods: {
     switchMode(mode) {
@@ -58,7 +65,7 @@ export default {
       this.nightMode = mode;
     },
     scrollTo(ele) {
-      if (ele == "home") {
+      if (ele === "home") {
         this.$router.push(`/`).catch(()=>{});
         window.scrollTo({ top: -80, behavior: "smooth" });
       } else {
