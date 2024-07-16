@@ -37,6 +37,14 @@
               <i class="fab fa-github"></i>
             </button>
             <button
+              v-if="medium"
+              class="btn btn-outline-secondary mx-2 "
+              @click="open('medium')"
+              v-tooltip.bottom="'Medium'"
+            >
+              <i class="fab fa-medium"></i>
+            </button>
+            <button
               v-if="twitter"
               class="btn btn-outline-secondary mx-2 "
               @click="open('twitter')"
@@ -87,6 +95,7 @@ export default {
       behance: info.links.behance,
       resume: info.links.resume,
       twitter: info.links.twitter,
+      medium: info.links.medium,
     };
   },
   methods: {
@@ -106,6 +115,9 @@ export default {
           break;
         case "twitter":
           window.open(this.twitter, "_blank");
+          break;
+        case "medium":
+          window.open(this.medium, "_blank");
           break;
       }
     },
