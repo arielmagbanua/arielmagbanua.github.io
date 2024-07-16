@@ -110,7 +110,7 @@ export default {
       this.showDesignModal = true;
     },
     showMore() {
-      if (this.number != this.all_items.length) {
+      if (this.number !== this.all_items.length) {
         this.number += 3;
 
         window.scrollBy({
@@ -122,11 +122,11 @@ export default {
           this.number = this.all_items.length;
       }
 
-      if (this.number == this.all_items.length && this.shower == 0) {
+      if (this.number === this.all_items.length && this.shower === 0) {
         this.shower = 1;
         this.showBtn = "show less";
-      } else if (this.number == this.all_items.length && this.shower == 1) {
-        var elementPosition = document.getElementById("portfolio").offsetTop;
+      } else if (this.number === this.all_items.length && this.shower === 1) {
+        const elementPosition = document.getElementById("portfolio").offsetTop;
         window.scrollTo({ top: elementPosition + 5, behavior: "smooth" });
         this.shower = 0;
         this.number = 3;

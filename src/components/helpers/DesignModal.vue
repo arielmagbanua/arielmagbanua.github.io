@@ -11,15 +11,20 @@
           }"
         >
           <div class="title1 px-4 pt-3">
-            <span :class="{ 'text-light': nightMode }">{{
-              portfolio.name
-            }}</span>
-            <a
-              class="pull-right"
-              style="font-size: 18px;"
-              @click="$emit('close')"
-              ><i class="fas fa-times"></i
-            ></a>
+            <div class="row">
+              <div class="col-10">
+                <span :class="{ 'text-light': nightMode }">{{ portfolio.name }}</span>
+              </div>
+              <div class="col-12">
+                <a
+                  class="float-right"
+                  style="font-size: 18px;"
+                  @click="$emit('close')"
+                >
+                  <i class="fas fa-times"></i>
+                </a>
+              </div>
+            </div>
             <hr
               class="my-1"
               :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"

@@ -11,20 +11,26 @@
           }"
         >
           <div class="title1 px-4 pt-3">
-            <span
-              ><a
-                href="#"
-                @click.prevent="open(portfolio.visit)"
-                :class="{ 'text-light': nightMode }"
-                >{{ portfolio.name }}</a
-              ></span
-            >
-            <a
-              class="pull-right"
-              style="font-size: 18px;"
-              @click="$emit('close')"
-              ><i class="fas fa-times"></i
-            ></a>
+            <div class="row">
+              <div class="col-10">
+                <a
+                  href="#"
+                  @click.prevent="open(portfolio.visit)"
+                  :class="{ 'text-light': nightMode }"
+                >
+                  {{ portfolio.name }}
+                </a>
+              </div>
+              <div class="col-2">
+                <a
+                  class="float-right"
+                  style="font-size: 18px;"
+                  @click="$emit('close')"
+                >
+                  <i class="fas fa-times"></i>
+                </a>
+              </div>
+            </div>
             <hr
               class="my-1"
               :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
