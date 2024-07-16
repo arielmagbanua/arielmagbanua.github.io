@@ -307,7 +307,7 @@ let info = {
         technologies: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL", "Laravel", "VueJs"],
         category: "Web App",
         date: "March 2019 - Present",
-        visit: "https://meshautomate.io/",
+        visit: "https://www.meshautomate.io/",
         description: "Software integration middleware and automation tool."
       },
       {
