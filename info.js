@@ -12,8 +12,9 @@ let info = {
   links: {
     linkedin: "https://www.linkedin.com/in/arielmagbanua/",
     github: "https://github.com/arielmagbanua",
-    resume: "https://docs.google.com/document/d/149plpJU-66WZATO3NisRpKrqEIRWYyzmN3jmkQRaEdw/edit#heading=h.jpv9v4b642w5",
-    twitter: "https://twitter.com/Ariel_Magbanua"
+    resume: "https://drive.google.com/file/d/1txhQKHiNoVj1R81cbmGJ0k2CVrogtD6K/view?usp=sharing",
+    twitter: "https://x.com/Ariel_Magbanua",
+    medium: "https://medium.com/@arielmagbanua"
   },
   education: [
     {
