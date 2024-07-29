@@ -12,7 +12,6 @@ let info = {
   links: {
     linkedin: "https://www.linkedin.com/in/arielmagbanua/",
     github: "https://github.com/arielmagbanua",
-    resume: "https://drive.google.com/file/d/1txhQKHiNoVj1R81cbmGJ0k2CVrogtD6K/view?usp=sharing",
     twitter: "https://x.com/Ariel_Magbanua",
     medium: "https://medium.com/@arielmagbanua"
   },
@@ -77,7 +76,7 @@ let info = {
     {
       name: "IdeaHub IT Solutions Provider, Inc.",
       place: "Davao City, Philippines",
-      date: "September 20212 - December 2019",
+      date: "September 2012 - December 2019",
       position: "Senior Software Developer",
       description: "I worked as one of the Android developers in the company and was deployed in an android project for a US client for almost three years, and then I worked on various web development projects for different US clients. My experience mostly using native Android java for mobile, Laravel framework for web, and server maintenance to ensure that all the applications were running correctly.",
       skills: [
