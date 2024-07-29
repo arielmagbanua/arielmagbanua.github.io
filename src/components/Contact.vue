@@ -87,7 +87,7 @@ export default {
         this.snackbarMessage = "Please all the fields";
         this.snackbarColor = "#64808E";
       } else {
-        var obj = {
+        let obj = {
           user_email: this.email,
           from_name: this.name,
           message_html: this.text,
