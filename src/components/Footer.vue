@@ -3,7 +3,7 @@
     <div class="container py-3">
       <div class="row pt-1 align-items-center">
         <div
-          class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pbelow"
+          class="col-xl-6 col-bg-6 col-md-6 col-sm-12 below"
           style="color: white;"
         >
           <span>© 2021 Copyright: Ariel Magbanua</span>
@@ -13,7 +13,7 @@
           <div class="text-center">
             <button
               v-if="linkedin"
-              class="btn btn-outline-secondary mx-2 "
+              class="btn btn-outline-secondary mx-2"
               @click="open('linkedin')"
             >
               <i class="fab fa-linkedin"></i>
@@ -34,10 +34,10 @@
             </button>
             <button
               v-if="twitter"
-              class="btn btn-outline-secondary mx-2 "
+              class="btn btn-outline-secondary mx-2"
               @click="open('twitter')"
             >
-              <i class="fab fa-twitter"></i>
+              <i class="fab fa-x-twitter"></i>
             </button>
             <button
               v-if="behance"

@@ -46,11 +46,11 @@
             </button>
             <button
               v-if="twitter"
-              class="btn btn-outline-secondary mx-2 "
+              class="btn btn-outline-secondary mx-2"
               @click="open('twitter')"
-              v-tooltip.bottom="'Twitter'"
+              v-tooltip.bottom="'X'"
             >
-              <i class="fab fa-twitter"></i>
+              <i class="fab fa-x-twitter"></i>
             </button>
             <button
               v-if="behance"
