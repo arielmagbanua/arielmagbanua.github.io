@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "prettier.useEditorConfig": true,
+  "prettier.semi": true, // Example: Adjust this setting as needed
+  "prettier.singleQuote": true, // Example: Adjust this setting as needed
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
