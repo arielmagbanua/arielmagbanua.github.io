@@ -6,7 +6,15 @@ export default {
   presets: [materialThemePreset],
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      transitionProperty: {
+        height: 'height',
+      },
+      screens: {
+        xs: '512px',
+        '2xs': '384px',
+      },
+    },
   },
   plugins: [],
 };
