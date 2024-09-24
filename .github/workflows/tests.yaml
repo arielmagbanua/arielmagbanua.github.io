@@ -2,11 +2,9 @@ name: ViteTest
 
 on:
   push:
-    branches:
-      - [main, dev, react-version]
+    branches: [main, dev, react-version]
   pull_request:
-    branches:
-      - [main, dev, react-version]
+    branches: [main, dev, react-version]
 
 jobs:
   test:
