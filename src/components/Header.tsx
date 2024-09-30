@@ -77,7 +77,11 @@ export default function Header() {
           >
             Portfolio
           </Link>
-          <MdDarkMode className="hover:text-on-surface-variant dark:hover:text-on-surface-variant-dark cursor-pointer" />
+          <MdDarkMode
+            onClick={handleThemeClick}
+            role="checkbox"
+            className="hover:text-on-surface-variant dark:hover:text-on-surface-variant-dark cursor-pointer dark-mode"
+          />
         </nav>
       </div>
       <nav className={verticalNavigationClasses}>
@@ -95,7 +99,8 @@ export default function Header() {
         </p>
         <MdDarkMode
           onClick={handleThemeClick}
-          className="hover:text-on-surface-variant dark:hover:text-on-surface-variant-dark cursor-pointer"
+          role="checkbox"
+          className="hover:text-on-surface-variant dark:hover:text-on-surface-variant-dark cursor-pointer dark-mode"
         />
       </nav>
     </header>
